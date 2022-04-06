@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/*body*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*menu*/
+.listas ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.listas ul li {    
+    padding: 30px;
+}
+/*responsive index*/
+@media screen and (min-width: 768px) {
+    .listas ul {
+        justify-content: end;       
+    }
+}       
+@media screen and (min-width: 768px) { 
+    .listas ul li {
+        margin: 10px 20px 0px 
+    }
+}    
+
+/*puntomexico*/
+
+.cuerpo {
+    padding: 30px;
+    width: 100%;
+}
+.imagenes {
+    width: 240px;   
+
+}
+
+@media screen and (min-width: 768px) {
+    .cuerpo  {
+        display: flex;
+        width: 100%;
+    }
+    
+}

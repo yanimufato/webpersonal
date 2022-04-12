@@ -6,68 +6,46 @@
     box-sizing: border-box;
     text-decoration-color: none;
     text-decoration-style: none;
+    overflow-x: hidden
 }
-/* index */    
+/* index  */   
 body {
     background-color: #eae9e6;
     text-decoration: none;
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
     overflow-x: hidden;
+    text-transform: uppercase;
 }
 
 /* menu */
 .listas ul {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: center;    
 }
-.listas ul li {    
-    padding: 20px;
+.listas ul li {          
+    padding: 40px;
 }
 
-/*main*/
-.main {
-    padding: 10px;
-    margin: 0px;
-}
-/*.banner {
-    position: relative;
-    top: 100px;
-    left: 125px;
-}
-.banner h1 {
-    background-color: #50657c;
-    color: #eae9e6;
-    position: absolute;
-    display: inline;
-    padding: 20px;
-    margin: 10px;
-    align-content: center;
-}*/    
-.main .ilustracion img {
-    height: 768px;
-    min-height: 100vh;    
-    padding: 20px;
-    margin-left: -1100px;
+/*central*/
+.ilustracion {
+    margin-top: 20px;
+    margin-left: -1000px;
 }
 
 /*footer*/
 .footer ul {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
 }
 .footer ul li {
-    width: 100px;
-    height: 30px;
-    padding: 20px;
-    text-align: center;
+    margin: 40px;
 }
+    
 
 /*trabajos*/
 .galeria {
@@ -92,27 +70,16 @@ body {
     width: 100%;    
 }
 
-/*responsive index*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .listas ul {
-        justify-content: end;       
+        justify-content: end;
+           
     }
-}       
-@media screen and (min-width: 768px) { 
-    .listas ul li {
-        margin: 10px 20px 0px 
-    }
-}     
-
-@media screen and (min-width: 768px) {
     .footer ul {
         justify-content: end;
-    }    
-    .footer ul li {
-        margin: 10px 20px 0px;
     }
+    
 }
-
 /*responsive galeria trabajos y comics*/
 @media screen and (min-width: 768px) {
     .galeria {
@@ -145,3 +112,24 @@ body {
 
 
 
+/*
+.banner {
+    position: relative;
+    top: 100px;
+    left: 125px;
+}
+.banner h1 {
+    background-color: #50657c;
+    color: #eae9e6;
+    position: absolute;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    align-content: center;
+}   
+.main .ilustracion img {
+    height: 768px;
+    min-height: 100vh;    
+    padding: 20px;
+    margin-left: -1100px;
+}*/

@@ -21,16 +21,7 @@ body {
     font-size: 24px;
     text-transform: uppercase;
 }
-/* menu */
-.listas ul {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;    
-}
-.listas ul li {          
-    padding: 40px;
-}
+
 
 /*central*/
 
@@ -83,23 +74,18 @@ body {
 /*responsive*/
 /*tablet*/
 @media screen and (min-width: 768px) { 
-    .listas ul {
-        justify-content: center;
-    }
+
+    
     .footer ul {
         justify-content: center;
     }    
 }
 
 @media screen and (min-width: 1200px) { /*escritorio*/
-    .listas ul {
-        justify-content: end;
-           
-    }
+    
     .footer ul {
         justify-content: end;
-    }
-    
+    }    
 }
 /*responsive galeria trabajos y comics*/
 @media screen and (min-width: 768px) {

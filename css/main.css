@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  overflow-x: hidden;
+}
+
+.background {
+  background-color: #eae9e6;
+  font-size: 2em;
+  overflow-x: hidden;
+}
+
+.background .listas ul {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .listas ul li {
+  margin: 20px;
+}
+
+.background .main h1 {
+  position: absolute;
+  background-color: #50657c;
+  color: #eae9e6;
+  width: 500px;
+  font-size: 1em;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.background .footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .footer ul li {
+  margin: 10px;
+  font-size: 0.5em;
+}
+
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.galeria .icono-trabajo {
+  width: 400px;
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.galeria .icono-trabajo p {
+  padding: 10px;
+}
+
+.main-galeria {
+  margin-top: 20px;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.main-galeria .datos-galeria {
+  padding: 10px;
+}
+
+.main-galeria .datos-galeria h1 {
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 425px) {
+  .listas ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .footer__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .background__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}

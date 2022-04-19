@@ -1,0 +1,9 @@
+@media screen and (min-width: 780px) {
+    body ul {
+        display: flex;
+        justify-content: end;
+    }
+    li {
+        margin: 40px;
+    }
+}

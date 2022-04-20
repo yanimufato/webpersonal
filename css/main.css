@@ -18,19 +18,9 @@
   overflow-x: hidden;
 }
 
-.background .listas ul {
-  font-family: 'Josefin Sans', sans-serif;
+.background .nav {
+  font-size: 0.75em;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.background .listas ul li {
-  margin: 20px;
 }
 
 .background .main h1 {
@@ -52,6 +42,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
 }
 
 .background .footer ul li {
@@ -82,7 +73,6 @@
 }
 
 .main-galeria {
-  margin-top: 20px;
   padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,8 +95,12 @@
   text-transform: uppercase;
 }
 
+.main-galeria .datos-galeria p {
+  width: 600px;
+}
+
 @media screen and (min-width: 425px) {
-  .listas ul {
+  .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,18 +108,18 @@
         -ms-flex-pack: end;
             justify-content: end;
   }
-  .footer__ul {
+  .main-galeria {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 780px) {
-  .background__ul {
+  .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

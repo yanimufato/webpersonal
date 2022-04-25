@@ -8,14 +8,19 @@
     text-decoration-style: none;
     overflow-x: hidden
 }
-
-.background {    
-    background-color: #eae9e6;
-    font-size: 2em;
+/*index*/
+.background {  
+    background-image: url(//img/banner.png);    
+    font-size: 1.5em;
     overflow-x: hidden;  
-    .nav {
-        font-size: 0.75em;
+    .navbar-collapse {
+        justify-content: end;
         text-transform: uppercase;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #50657c ;
+        margin: 0px 10px 0px 10px;
+    }
     }
     .main {         
         h1 {
@@ -39,7 +44,7 @@
             font-size: 0.5em;
         }
     }
-}
+
 
 .galeria {
     display: flex;
@@ -71,15 +76,21 @@
         p {
             width: 600px;
         }
-
     }
-
 }
 
+// @media screen and (min-width: 425px) {
+//     .footer ul {
+//         display: flex;
+//         justify-content: end;
+//     }
+//     .main-galeria {
+//         display: flex;
+//         justify-content: center;
+//     }
 
-
-
-@media screen and (min-width: 425px) {
+// }
+@media screen and (min-width: 780px) {
     .footer ul {
         display: flex;
         justify-content: end;
@@ -87,13 +98,6 @@
     .main-galeria {
         display: flex;
         justify-content: center;
-    }
-
-}
-@media screen and (min-width: 780px) {
-    .footer ul {
-        display: flex;
-        justify-content: end;
     }
 
 

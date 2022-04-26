@@ -14,8 +14,7 @@
 
 /*index*/
 .background {
-  background-image: url(//img/banner.png);
-  font-size: 1.5em;
+  background-color: #eae9e6;
   overflow-x: hidden;
 }
 
@@ -24,6 +23,7 @@
       -ms-flex-pack: end;
           justify-content: end;
   text-transform: uppercase;
+  margin: 0px 45px;
 }
 
 .background .navbar-light .navbar-nav .nav-link {
@@ -31,19 +31,30 @@
   margin: 0px 10px 0px 10px;
 }
 
-.main h1 {
-  position: absolute;
-  background-color: #50657c;
-  color: #eae9e6;
-  width: 500px;
-  font-size: 1em;
-  padding: 20px;
-  text-align: center;
-  margin-top: 60px;
-  margin-left: 50px;
+.background .navbar-nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
 }
 
-.footer ul {
+.background .navbar-brand {
+  margin-left: 45px;
+}
+
+.background .navbar-togller-icon {
+  margin: 0px 45px 0px 0px;
+}
+
+.background .ilustracion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background .footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,9 +64,9 @@
   text-transform: uppercase;
 }
 
-.footer ul li {
+.background .footer ul li {
   margin: 10px;
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 .galeria {
@@ -69,45 +80,70 @@
           justify-content: space-evenly;
 }
 
-.galeria .icono-trabajo {
+.galeria .ilus-secciones {
   width: 400px;
   font-size: 0.75em;
   text-align: center;
   margin-top: 20px;
 }
 
-.galeria .icono-trabajo p {
+.galeria .ilus-secciones p {
   padding: 10px;
+}
+
+.galeria .icono-comic {
+  width: 400px;
+  font-size: 00.75em;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .main-galeria {
-  padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 52px 0px 52px;
 }
 
 .main-galeria .datos-galeria {
-  padding: 10px;
+  padding: 20px;
+  margin-left: 15px;
 }
 
 .main-galeria .datos-galeria h1 {
-  font-size: 1.5em;
-  font-family: 'Josefin Sans', sans-serif;
+  padding: 10px 0px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .main-galeria .datos-galeria p {
   width: 600px;
+  text-align: justify;
+  font-size: 1.05em;
 }
 
-@media screen and (min-width: 780px) {
+.main-galeria .datos-galeria p .salto-linea {
+  display: block;
+}
+
+.main-galeria .cuerpo {
+  margin-top: 35px;
+  width: 719px;
+  margin: 0 px 20px 0px 20px;
+}
+
+.main-galeria .cuerpo .ilus-galeria {
+  margin: 0px 0px 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .background .navbar-brand {
+    margin: auto;
+  }
   .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -117,11 +153,28 @@
             justify-content: end;
   }
   .main-galeria {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-galeria .datos-galeria {
+    padding: 0px;
+    margin: 0px;
+  }
+  .ilustracion {
+    margin: 0px 40px;
+  }
+  .navbar-collapse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: end;
+  }
+  .galeria .ilus-secciones {
+    width: 300px;
   }
 }

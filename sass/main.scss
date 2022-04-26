@@ -10,30 +10,32 @@
 }
 /*index*/
 .background {  
-    background-image: url(//img/banner.png);    
-    font-size: 1.5em;
+    background-color: #eae9e6;     
     overflow-x: hidden;  
     .navbar-collapse {
         justify-content: end;
         text-transform: uppercase;
+        margin: 0px 45px;        
     }
     .navbar-light .navbar-nav .nav-link {
         color: #50657c ;
         margin: 0px 10px 0px 10px;
     }
+    .navbar-nav {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.7em;
     }
-    .main {         
-        h1 {
-            position: absolute;
-            background-color: #50657c;
-            color: #eae9e6;
-            width: 500px;
-            font-size: 1em;
-            padding: 20px;
-            text-align: center;
-            margin-top: 60px;
-            margin-left: 50px;
-        }
+    .navbar-brand {
+        margin-left: 45px;
+    }
+    .navbar-togller-icon {
+        margin: 0px 45px 0px 0px;
+    }
+    .ilustracion {     
+        display: flex;
+        justify-content: center;
+        
     }
     .footer ul {
         display: flex;
@@ -41,16 +43,16 @@
         text-transform: uppercase;
         li {
             margin: 10px;
-            font-size: 0.5em;
+            font-size: 1em;
         }
     }
-
-
+}        
+ 
 .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
-    .icono-trabajo {
+    .ilus-secciones {
         width: 400px;
         font-size: 0.75em;
         text-align: center;
@@ -59,47 +61,86 @@
             padding: 10px;
         }
     }
+    .icono-comic {
+        width: 400px;
+        font-size: 00.75em;
+        text-align: center;
+        margin-top: 20px;
+    }
 
 }
-.main-galeria {
-    padding: 100px;
+.main-galeria {   
     display: flex;
-    flex-direction: column-reverse;
-    align-content: space-between;
+    justify-content: center;
+    margin: 0px 52px 0px 52px;
     .datos-galeria {
-        padding: 10px;
+        padding: 20px;
+        margin-left: 15px;      
         h1 {
-            font-size: 1.5em;
-            font-family: 'Josefin Sans', sans-serif;
+            padding: 10px 0px ;                 
             text-transform: uppercase;
+            font-weight: 700;
         }
         p {
             width: 600px;
+            text-align: justify;
+            font-size: 1.05em;
+            .salto-linea {
+                display: block;
+            }
+        }
+    }
+    .cuerpo {
+        margin-top: 35px;
+        width: 719px;
+        margin: 0 px 20px 0px 20px;
+        .ilus-galeria {
+            margin: 0px 0px 20px;
+            width: 100%;
         }
     }
 }
 
-// @media screen and (min-width: 425px) {
-//     .footer ul {
-//         display: flex;
-//         justify-content: end;
-//     }
-//     .main-galeria {
-//         display: flex;
-//         justify-content: center;
-//     }
-
-// }
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 768px) {
+    .background .navbar-brand  {
+        margin: auto;
+    }
     .footer ul {
+         display: flex;
+         justify-content: end;
+     }
+    .main-galeria {
+        flex-direction: column-reverse;
+        .datos-galeria {
+            padding: 0px;
+            margin: 0px;
+        }
+     }
+    .ilustracion {
+        margin: 0px 40px;        
+    }
+    .navbar-collapse {
         display: flex;
         justify-content: end;
+        text-align: end;
     }
-    .main-galeria {
-        display: flex;
-        justify-content: center;
-    }
-
-
+    .galeria .ilus-secciones {
+        width: 300px;
+        }
+ 
 }
+
+// h1 {
+//     position: absolute;
+//     background-color: #50657c;
+//     color: #eae9e6;
+//     width: 500px;
+//     font-size: 2em;
+//     padding: 20px;
+//     text-align: center;
+//     margin-top: 40px;
+//     margin-left: 200px;
+// }
+
+
  

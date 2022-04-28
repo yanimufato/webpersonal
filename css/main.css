@@ -5,10 +5,6 @@
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-text-decoration-color: none;
-          text-decoration-color: none;
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
   overflow-x: hidden;
 }
 
@@ -41,10 +37,6 @@
   margin-left: 45px;
 }
 
-.background .navbar-togller-icon {
-  margin: 0px 45px 0px 0px;
-}
-
 .background .ilustracion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +54,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .background .footer ul li {
@@ -69,6 +62,7 @@
   font-size: 1em;
 }
 
+/*seccion trabajos y comics*/
 .galeria {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,17 +134,9 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .background .navbar-brand {
-    margin: auto;
-  }
-  .footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    margin: 30px auto;
   }
   .main-galeria {
     -webkit-box-orient: vertical;
@@ -162,19 +148,44 @@
     padding: 0px;
     margin: 0px;
   }
-  .ilustracion {
-    margin: 0px 40px;
-  }
-  .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    text-align: end;
+  .background .ilustracion {
+    padding: 35px;
   }
   .galeria .ilus-secciones {
-    width: 300px;
+    margin: 35px;
   }
+  .navbar-toggler {
+    margin-right: 10px;
+    border: none;
+  }
+}
+
+/*maps*/
+.tipo__ig {
+  color: blueviolet;
+}
+
+.tipo__tw {
+  color: lightblue;
+}
+
+.color-prueba {
+  background-color: #aa5656;
+}
+
+/*extend*/
+.bg-rs, .bg-rs--oscuro {
+  background-color: #aa5656;
+  border: 5px;
+}
+
+.bg-rs--oscuro {
+  border-color: black;
+}
+
+/*mixins*/
+.fb-rs {
+  background-color: blue;
+  color: white;
+  border-color: black;
 }

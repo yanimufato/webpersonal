@@ -4,8 +4,6 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
-    text-decoration-color: none;
-    text-decoration-style: none;
     overflow-x: hidden
 }
 /*index*/
@@ -29,9 +27,6 @@
     .navbar-brand {
         margin-left: 45px;
     }
-    .navbar-togller-icon {
-        margin: 0px 45px 0px 0px;
-    }
     .ilustracion {     
         display: flex;
         justify-content: center;
@@ -41,13 +36,14 @@
         display: flex;
         justify-content: center;
         text-transform: uppercase;
+        text-decoration: none;
         li {
             margin: 10px;
             font-size: 1em;
         }
     }
-}        
- 
+}
+/*seccion trabajos y comics*/
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -101,14 +97,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .background .navbar-brand  {
-        margin: auto;
+        margin: 30px auto;
     }
-    .footer ul {
-         display: flex;
-         justify-content: end;
-     }
     .main-galeria {
         flex-direction: column-reverse;
         .datos-galeria {
@@ -116,19 +108,60 @@
             margin: 0px;
         }
      }
-    .ilustracion {
-        margin: 0px 40px;        
+    .background .ilustracion {
+        padding: 35px;        
     }
-    .navbar-collapse {
-        display: flex;
-        justify-content: end;
-        text-align: end;
-    }
+
     .galeria .ilus-secciones {
-        width: 300px;
+        margin: 35px;
         }
- 
+    .navbar-toggler {
+        margin-right: 10px;
+        border: none;        
+    }        
 }
+
+/*maps*/
+$colores-rs: (
+    ig: blueviolet,
+    tw: lightblue,
+);
+@each $nombre, $valor in $colores-rs {
+    .tipo__#{$nombre}{
+        color: $valor
+    }    
+}
+$color-di: (
+    tipo: #50657c,
+    bg: #aa5656,
+    footer: red,
+);
+.color-prueba {
+    background-color: map-get($map:$color-di , $key:bg );
+}
+
+/*extend*/
+.bg-rs {
+    background-color: #aa5656;
+    border: 5px;
+}
+.bg-rs--oscuro {
+    @extend .bg-rs;
+    border-color: black;
+}
+
+/*mixins*/
+@mixin fb {
+    background-color: blue;
+    color: white;
+}
+.fb-rs {
+    @include fb;
+    border-color: black;
+}
+
+
+
 
 // h1 {
 //     position: absolute;

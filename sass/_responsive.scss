@@ -1,9 +1,23 @@
-@media screen and (min-width: 780px) {
-    body ul {
-        display: flex;
-        justify-content: end;
+@media screen and (min-width: 768px) {
+    .background .navbar-brand  {
+        margin: 30px auto;
     }
-    li {
-        margin: 40px;
+    .main-galeria {
+        flex-direction: column-reverse;
+        .datos-galeria {
+            padding: 0px;
+            margin: 0px;
+        }
+     }
+    .background .ilustracion {
+        padding: 35px;        
     }
+
+    .galeria .ilus-secciones {
+        margin: 35px;
+        }
+    .navbar-toggler {
+        margin-right: 10px;
+        border: none;        
+    }        
 }

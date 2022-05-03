@@ -1,23 +1,30 @@
-@media screen and (min-width: 768px) {
-    .background .navbar-brand  {
-        margin: 30px auto;
+@media screen and (max-width: 768px){
+    .background {
+        font-size: 0.5em;
     }
-    .main-galeria {
-        flex-direction: column-reverse;
+    .container-fluid{
+        margin: 20px 0px 20px 25px;
+    }
+    .navbar-toggler {
+        margin-right: 10px;
+        border: none;        
+    }
+    .navbar-brand {
+        width: 50px;       
+    }
+    
+    .background .ilustracion {
+        padding: 0px 35px;
+    }
+    .background .main-galeria {
+        display: inline-block;        
         .datos-galeria {
             padding: 0px;
             margin: 0px;
         }
      }
-    .background .ilustracion {
-        padding: 35px;        
-    }
-
     .galeria .ilus-secciones {
         margin: 35px;
         }
-    .navbar-toggler {
-        margin-right: 10px;
-        border: none;        
-    }        
+ 
 }

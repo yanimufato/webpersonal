@@ -6,48 +6,77 @@
     box-sizing: border-box;
     overflow-x: hidden
 }
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+
+@import "contacto";
+@import "bio";
+@import "responsive";
+
 /*index*/
+
 .background {  
     background-color: #eae9e6;     
-    overflow-x: hidden;  
-    .navbar-collapse {
-        justify-content: end;
-        text-transform: uppercase;
-        margin: 0px 45px;        
-    }
-    .navbar-light .navbar-nav .nav-link {
-        color: #50657c ;
-        margin: 0px 10px 0px 10px;
-    }
+    overflow-x: hidden;
+    .navbar-brand { /*gif*/
+        margin-left: 20px;
+        img {
+            margin-left: 40 px;
+        }
+    }  
     .navbar-nav {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1.7em;
+        padding: 20px;
+        .nav-item {
+            padding: 20px;
+        }
+
     }
-    .navbar-brand {
-        margin-left: 45px;
+    .navbar-collapse {
+        justify-content: end;
+        text-transform: uppercase;
+        margin: 0px; 
+        
+        .nav-link {
+            color: #50657c;
+        }        
     }
+
     .ilustracion {     
         display: flex;
         justify-content: center;
-        
+        margin-top: auto;        
     }
     .footer ul {
         display: flex;
         justify-content: center;
         text-transform: uppercase;
-        text-decoration: none;
+        color: #50657c;
+        font-weight: 700;
+        background-color: #50657c;
+        margin-top: 20px;
         li {
             margin: 10px;
             font-size: 1em;
+        }
+        a:hover {
+            color: #50657c;
+        }
+        a:visited {
+            color: #50657c;
         }
     }
 }
 /*seccion trabajos y comics*/
 .galeria {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;     
+    margin: 0px 52px 0px 52px;
     .ilus-secciones {
         width: 400px;
         font-size: 0.75em;
@@ -69,6 +98,15 @@
     display: flex;
     justify-content: center;
     margin: 0px 52px 0px 52px;
+    .cuerpo {
+        margin-top: 35px;
+        width: 719px;
+        margin: 0 px 20px 0px 20px;
+        .ilus-galeria {
+            margin: 0px 0px 20px;
+            width: 100%;
+        }
+    }    
     .datos-galeria {
         padding: 20px;
         margin-left: 15px;      
@@ -86,82 +124,7 @@
             }
         }
     }
-    .cuerpo {
-        margin-top: 35px;
-        width: 719px;
-        margin: 0 px 20px 0px 20px;
-        .ilus-galeria {
-            margin: 0px 0px 20px;
-            width: 100%;
-        }
-    }
 }
-
-@media screen and (min-width: 768px) {
-    .background .navbar-brand  {
-        margin: 30px auto;
-    }
-    .main-galeria {
-        flex-direction: column-reverse;
-        .datos-galeria {
-            padding: 0px;
-            margin: 0px;
-        }
-     }
-    .background .ilustracion {
-        padding: 35px;        
-    }
-
-    .galeria .ilus-secciones {
-        margin: 35px;
-        }
-    .navbar-toggler {
-        margin-right: 10px;
-        border: none;        
-    }        
-}
-
-/*maps*/
-$colores-rs: (
-    ig: blueviolet,
-    tw: lightblue,
-);
-@each $nombre, $valor in $colores-rs {
-    .tipo__#{$nombre}{
-        color: $valor
-    }    
-}
-$color-di: (
-    tipo: #50657c,
-    bg: #aa5656,
-    footer: red,
-);
-.color-prueba {
-    background-color: map-get($map:$color-di , $key:bg );
-}
-
-/*extend*/
-.bg-rs {
-    background-color: #aa5656;
-    border: 5px;
-}
-.bg-rs--oscuro {
-    @extend .bg-rs;
-    border-color: black;
-}
-
-/*mixins*/
-@mixin fb {
-    background-color: blue;
-    color: white;
-}
-.fb-rs {
-    @include fb;
-    border-color: black;
-}
-
-
-
 
 // h1 {
 //     position: absolute;

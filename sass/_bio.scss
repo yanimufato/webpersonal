@@ -1,0 +1,18 @@
+.main-bio {
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px 0px 100px;
+    .foto {
+        margin-top: 28px;
+        width: 719px;       
+    }
+    .texto-bio {
+        padding: 20px;
+        margin-left: 15px;
+        p {
+            width: 600px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+}
+}

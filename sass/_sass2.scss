@@ -1,0 +1,38 @@
+/*maps*/
+$colores-rs: (
+    ig: blueviolet,
+    tw: lightblue,
+);
+@each $nombre, $valor in $colores-rs {
+    .tipo__#{$nombre}{
+        color: $valor
+    }    
+}
+$color-di: (
+    tipo: #50657c,
+    bg: #aa5656,
+    footer: red,
+);
+.color-prueba {
+    background-color: map-get($map:$color-di , $key:bg );
+}
+
+/*extend*/
+.bg-rs {
+    background-color: #aa5656;
+    border: 5px;
+}
+.bg-rs--oscuro {
+    @extend .bg-rs;
+    border-color: black;
+}
+
+/*mixins*/
+@mixin fb {
+    background-color: blue;
+    color: white;
+}
+.fb-rs {
+    @include fb;
+    border-color: black;
+}

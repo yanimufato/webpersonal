@@ -21,35 +21,31 @@ a:link, a:visited, a:active {
     background-color: #eae9e6;     
     overflow-x: hidden;
     .navbar-brand { /*gif*/
-        margin-left: 20px;
-        img {
-            margin-left: 40 px;
-        }
+        margin-left: 70px;
     }  
-    .navbar-nav {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 1.7em;
-        padding: 20px;
-        .nav-item {
-            padding: 20px;
-        }
-
-    }
     .navbar-collapse {
-        justify-content: end;
-        text-transform: uppercase;
-        margin: 0px; 
-        
-        .nav-link {
-            color: #50657c;
-        }        
+        margin-right: 0px;
+        .navbar-nav { /*menu*/
+            display: flex;
+            justify-content: end;
+            text-transform: uppercase;         
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 1.7em;
+            padding: 68px;
+            .nav-item {
+                padding: 20px;
+                .nav-link {
+                    color: #50657c;
+                }  
+            }
+        }
     }
-
     .ilustracion {     
         display: flex;
         justify-content: center;
-        margin-top: auto;        
+        margin-top: auto; 
+        margin-bottom: 20px;       
     }
     .footer ul {
         display: flex;
@@ -57,7 +53,6 @@ a:link, a:visited, a:active {
         text-transform: uppercase;
         color: #50657c;
         font-weight: 700;
-        background-color: #50657c;
         margin-top: 20px;
         li {
             margin: 10px;
@@ -75,25 +70,21 @@ a:link, a:visited, a:active {
 .galeria {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;     
-    margin: 0px 52px 0px 52px;
-    .ilus-secciones {
-        width: 400px;
-        font-size: 0.75em;
-        text-align: center;
-        margin-top: 20px;
+    flex-wrap: wrap;
+    margin: 0px 10px; 
+    padding: 10px;
         p {
             padding: 10px;
-        }
-    }
-    .icono-comic {
-        width: 400px;
-        font-size: 00.75em;
-        text-align: center;
-        margin-top: 20px;
-    }
-
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.75em;
+            text-align: center;
+            margin-top: 10px;
+            background-color: #50657c;
+            color: #eae9e6;
+        }        
 }
+/*paginas galeria*/
 .main-galeria {   
     display: flex;
     justify-content: center;
@@ -110,7 +101,14 @@ a:link, a:visited, a:active {
     .datos-galeria {
         padding: 20px;
         margin-left: 15px;      
-        h1 {
+        .titu-trabajos {
+            color: #516f6b;
+            padding: 10px 0px ;                 
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .titu-comics {
+            color: #7ebdb3;
             padding: 10px 0px ;                 
             text-transform: uppercase;
             font-weight: 700;
@@ -125,18 +123,6 @@ a:link, a:visited, a:active {
         }
     }
 }
-
-// h1 {
-//     position: absolute;
-//     background-color: #50657c;
-//     color: #eae9e6;
-//     width: 500px;
-//     font-size: 2em;
-//     padding: 20px;
-//     text-align: center;
-//     margin-top: 40px;
-//     margin-left: 200px;
-// }
 
 
  

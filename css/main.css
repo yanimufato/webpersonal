@@ -12,6 +12,10 @@ a:link, a:visited, a:active {
   text-decoration: none;
 }
 
+.container {
+  margin: 0px 47px;
+}
+
 .container .encabezado {
   text-transform: uppercase;
   font-weight: 700;
@@ -19,7 +23,6 @@ a:link, a:visited, a:active {
 }
 
 .form-horizontal {
-  margin: 28px 20px;
   width: 719px;
 }
 
@@ -38,11 +41,11 @@ a:link, a:visited, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px 100px 0px 100px;
+  margin: 0px;
 }
 
 .main-bio .foto {
-  margin-top: 28px;
+  margin-top: 0px;
   width: 719px;
 }
 
@@ -61,28 +64,16 @@ a:link, a:visited, a:active {
   .background {
     font-size: 0.5em;
   }
-  .container-fluid {
-    margin: 20px 0px 20px 25px;
-  }
-  .navbar-toggler {
-    margin-right: 10px;
-    border: none;
-  }
   .navbar-brand {
-    width: 50px;
+    /*gif*/
+    width: 70px;
+    margin-left: 25px;
   }
-  .background .ilustracion {
-    padding: 0px 35px;
-  }
-  .background .main-galeria {
-    display: inline-block;
-  }
-  .background .main-galeria .datos-galeria {
+  .navbar-nav .navbar-item {
     padding: 0px;
-    margin: 0px;
   }
-  .galeria .ilus-secciones {
-    margin: 35px;
+  .ilustracion {
+    padding: 0px 35px;
   }
 }
 
@@ -94,33 +85,33 @@ a:link, a:visited, a:active {
 
 .background .navbar-brand {
   /*gif*/
-  margin-left: 20px;
-}
-
-.background .navbar-brand img {
-  margin-left: 40 px;
-}
-
-.background .navbar-nav {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 1.7em;
-  padding: 20px;
-}
-
-.background .navbar-nav .nav-item {
-  padding: 20px;
+  margin-left: 70px;
 }
 
 .background .navbar-collapse {
+  margin-right: 0px;
+}
+
+.background .navbar-collapse .navbar-nav {
+  /*menu*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
   text-transform: uppercase;
-  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  padding: 68px;
 }
 
-.background .navbar-collapse .nav-link {
+.background .navbar-collapse .navbar-nav .nav-item {
+  padding: 20px;
+}
+
+.background .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #50657c;
 }
 
@@ -132,6 +123,7 @@ a:link, a:visited, a:active {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: auto;
+  margin-bottom: 20px;
 }
 
 .background .footer ul {
@@ -144,7 +136,6 @@ a:link, a:visited, a:active {
   text-transform: uppercase;
   color: #50657c;
   font-weight: 700;
-  background-color: #50657c;
   margin-top: 20px;
 }
 
@@ -171,27 +162,22 @@ a:link, a:visited, a:active {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0px 52px 0px 52px;
-}
-
-.galeria .ilus-secciones {
-  width: 400px;
-  font-size: 0.75em;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.galeria .ilus-secciones p {
+  margin: 0px 10px;
   padding: 10px;
 }
 
-.galeria .icono-comic {
-  width: 400px;
-  font-size: 00.75em;
+.galeria p {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  background-color: #50657c;
+  color: #eae9e6;
 }
 
+/*paginas galeria*/
 .main-galeria {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +204,15 @@ a:link, a:visited, a:active {
   margin-left: 15px;
 }
 
-.main-galeria .datos-galeria h1 {
+.main-galeria .datos-galeria .titu-trabajos {
+  color: #516f6b;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-galeria .datos-galeria .titu-comics {
+  color: #7ebdb3;
   padding: 10px 0px;
   text-transform: uppercase;
   font-weight: 700;

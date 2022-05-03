@@ -1,10 +1,13 @@
-.container .encabezado {
+.container {
+    margin: 0px 47px;
+    .encabezado {
     text-transform: uppercase;
     font-weight: 700;
     color: #ced17f;
+    }
 }
 .form-horizontal {
-    margin: 28px 20px;
+
     width: 719px;
 }
 .form-group

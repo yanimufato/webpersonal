@@ -2,29 +2,15 @@
     .background {
         font-size: 0.5em;
     }
-    .container-fluid{
-        margin: 20px 0px 20px 25px;
+    .navbar-brand { /*gif*/
+        width: 70px;
+        margin-left: 25px;       
     }
-    .navbar-toggler {
-        margin-right: 10px;
-        border: none;        
+    .navbar-nav .navbar-item {
+        padding: 0px;
     }
-    .navbar-brand {
-        width: 50px;       
-    }
-    
-    .background .ilustracion {
+    .ilustracion {
         padding: 0px 35px;
     }
-    .background .main-galeria {
-        display: inline-block;        
-        .datos-galeria {
-            padding: 0px;
-            margin: 0px;
-        }
-     }
-    .galeria .ilus-secciones {
-        margin: 35px;
-        }
- 
+
 }

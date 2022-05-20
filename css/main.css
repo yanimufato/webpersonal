@@ -13,7 +13,12 @@ a:link, a:visited, a:active {
 }
 
 .container {
-  margin: 0px 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .encabezado {
@@ -22,97 +27,408 @@ a:link, a:visited, a:active {
   color: #ced17f;
 }
 
-.form-horizontal {
-  width: 719px;
+.form-group {
+  font-size: 6rem;
 }
 
-.form-group
 .btn-primary {
-  margin-top: 20px;
   background-color: #ced17f;
   color: black;
   border: none;
 }
 
-.main-bio {
+@media screen and (max-width: 767px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 130px 30px 0px 30px;
+  }
+  .container .encabezado {
+    font-size: 2rem;
+  }
+  .container .form-horizontal {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  .container .ilus-ctc {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*laptop*/
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 300px 30px 0px 30px;
+  }
+  .container .encabezado {
+    font-size: 3rem;
+  }
+  .container .form-horizontal {
+    width: 600px;
+    padding: 0px 0px 0px 50px;
+  }
+  .container .ilus-ctc {
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+
+.main-galeria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px;
+  margin-top: 350px;
 }
 
-.main-bio .foto {
+.main-galeria .foto {
   margin-top: 0px;
   width: 719px;
 }
 
-.main-bio .texto-bio {
+.main-galeria .datos-galeria {
   padding: 20px;
   margin-left: 15px;
 }
 
-.main-bio .texto-bio p {
+.main-galeria .datos-galeria p {
   width: 600px;
   text-align: justify;
   font-size: 1.05em;
 }
 
-@media screen and (max-width: 768px) {
-  .background {
-    font-size: 0.5em;
+@media screen and (max-width: 767px) {
+  .main-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .navbar-brand {
-    /*gif*/
-    width: 70px;
-    margin-left: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  /*laptop*/
+  .main-galeria {
+    padding: 300px 0px 10px;
   }
-  .navbar-nav .navbar-item {
+}
+
+@media screen and (max-width: 767px) {
+  /*movil*/
+  .navbar {
+    font-size: 0.5rem;
+    position: fixed;
+    z-index: 100;
+  }
+  .navbar .navbar-brand {
+    width: 90px;
+    margin-left: -10px;
+  }
+  .navbar .navbar-toggler {
+    background-color: #7ebcb2;
+    margin-top: 10px;
+  }
+  .navbar .navbar-nav {
+    font-size: 1rem;
+  }
+  .navbar .navbar-link {
     padding: 0px;
   }
+  .main .titular h1 {
+    margin-top: 30px;
+    padding: 90px 0px 10px;
+    font-size: 2rem;
+  }
   .ilustracion {
-    padding: 0px 35px;
+    padding: 10px 35px 0px;
+  }
+  .galeria {
+    margin: 20px 20px 0px;
+    padding: 90px 0px 10px;
+  }
+  .galeria .ilus-secciones {
+    padding: 10px;
+  }
+  .main-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 20px;
+    padding: 90px 0px 10px;
+  }
+  .main-galeria .ilus-galeria {
+    width: 100%;
+    padding: 8px 40px;
+  }
+  .main-galeria .datos-galeria {
+    margin: 0px;
+    padding: 8px 40px;
+  }
+  .main-galeria .datos-galeria p {
+    width: 100%;
+    font-size: 1rem;
+    word-spacing: normal;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+  }
+  .main-galeria .datos-galeria .titu-trabajos {
+    font-size: 2.7rem;
+  }
+  .main-galeria .datos-galeria .titu-comics {
+    font-size: 2.7rem;
+  }
+  .footer ul {
+    font-size: 0.7rem;
+    padding: 0px;
+  }
+  .footer ul p {
+    margin: 0px;
+    padding: 5px;
+  }
+  .footer ul li {
+    margin: 0px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+  .background {
+    font-size: 1rem;
+  }
+  .background .navbar {
+    margin-top: 20px;
+    padding: 0px 40px;
+  }
+  .background .navbar-brand {
+    width: 100px;
+    margin-left: 30px;
+  }
+  .background .navbar-toggler {
+    background-color: #503748;
+  }
+  .background .navbar-nav {
+    font-size: 1.8rem;
+  }
+  .background .navbar-link {
+    padding: 0px 0px;
+  }
+  .background .main {
+    padding: 10px 80px 0px;
+  }
+  .background .titular h1 {
+    font-size: 5rem;
+    padding: 10px;
+  }
+  .galeria {
+    margin: 20px 20px 0px;
+    padding: 0px 50px;
+  }
+  .galeria .ilus-secciones {
+    width: 300px;
+    padding: 10px;
+  }
+  .main-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .main-galeria .cuerpo {
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .main-galeria .ilus-galeria {
+    width: 100%;
+    padding: 8px 30px;
+  }
+  .main-galeria .datos-galeria {
+    width: 100%;
+    padding: 0px 80px;
+  }
+  .main-galeria .datos-galeria p {
+    width: 100%;
+    font-size: 1rem;
+    word-spacing: normal;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+  }
+  .main-galeria .datos-galeria .titu-trabajos {
+    font-size: 2.7rem;
+  }
+  .main-galeria .datos-galeria .titu-comics {
+    font-size: 2.7rem;
+  }
+  .footer ul {
+    font-size: 1rem;
+    padding: 0px;
+  }
+  .footer ul p {
+    margin: 0px;
+    padding: 5px;
+  }
+  .footer ul li {
+    margin: 0px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*laptop*/
+  .background {
+    font-size: 1rem;
+  }
+  .background .navbar {
+    position: fixed;
+    z-index: 100;
+  }
+  .background .navbar-brand {
+    width: 250px;
+    margin: 0px 75px 0px 100px;
+  }
+  .background .navbar-nav {
+    font-size: 3rem;
+  }
+  .titular {
+    padding: 250px 0px 10px;
+  }
+  h1 {
+    font-size: 5rem;
+    padding: 30px;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    margin-bottom: 20px;
+  }
+  .galeria {
+    margin: 350px 178px 20px;
+  }
+  .galeria .ilus-secciones {
+    margin-bottom: 60px;
+  }
+  .main-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 40px 140px 0px 140px;
+  }
+  .main-galeria .cuerpo {
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
+  .main-galeria .cuerpo .ilus-galeria {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .main-galeria .datos-galeria {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000px;
+    padding: 0px 20px;
+    margin-left: 15px;
+  }
+  .main-galeria .datos-galeria p {
+    width: 540px;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    line-height: 2.8rem;
+    letter-spacing: normal;
+  }
+  .main-galeria .datos-galeria .titu-trabajos {
+    font-size: 4rem;
+  }
+  .main-galeria .datos-galeria .titu-comics {
+    font-size: 4rem;
+  }
+  .footer ul {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+  .footer ul p {
+    margin: 0px;
+    padding: 10px;
+  }
+  .footer ul li {
+    margin: 0px;
+    padding: 10px;
   }
 }
 
 /*index*/
+html {
+  font-size: 10px;
+}
+
 .background {
-  background-color: #eae9e6;
+  background-color: #eae9e7;
   overflow-x: hidden;
 }
 
-.background .navbar-brand {
-  /*gif*/
-  margin-left: 70px;
-}
-
-.background .navbar-collapse {
-  margin-right: 0px;
-}
-
-.background .navbar-collapse .navbar-nav {
-  /*menu*/
+.background .navbar {
+  /*navbar*/
+  width: 100%;
+  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eae9e7;
+}
+
+.background .navbar .navbar-nav {
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+}
+
+.background .navbar .navbar-nav .nav-link {
+  width: 100%;
+  color: #503748;
   font-weight: 700;
-  font-size: 1.7em;
-  padding: 68px;
+  padding: 5px 40px;
 }
 
-.background .navbar-collapse .navbar-nav .nav-item {
-  padding: 20px;
+.background .main .titular {
+  /*cuerpo*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.background .navbar-collapse .navbar-nav .nav-item .nav-link {
-  color: #50657c;
+.background .main .titular h1 {
+  text-transform: uppercase;
+  color: #7ebcb2;
+  font-weight: 900;
+  text-align: center;
 }
 
 .background .ilustracion {
@@ -127,6 +443,7 @@ a:link, a:visited, a:active {
 }
 
 .background .footer ul {
+  /*footer*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,22 +451,22 @@ a:link, a:visited, a:active {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  color: #50657c;
+  color: #503748;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.background .footer ul li {
+.background .footer ul p li .color-link {
   margin: 10px;
-  font-size: 1em;
+  color: #e736af;
 }
 
 .background .footer ul a:hover {
-  color: #50657c;
+  color: #503748;
 }
 
 .background .footer ul a:visited {
-  color: #50657c;
+  color: #503748;
 }
 
 /*seccion trabajos y comics*/
@@ -157,73 +474,47 @@ a:link, a:visited, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0px 10px;
-  padding: 10px;
-}
-
-.galeria p {
-  padding: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.75em;
-  text-align: center;
-  margin-top: 10px;
-  background-color: #50657c;
-  color: #eae9e6;
 }
 
 /*paginas galeria*/
-.main-galeria {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0px 52px 0px 52px;
-}
-
-.main-galeria .cuerpo {
-  margin-top: 35px;
-  width: 719px;
-  margin: 0 px 20px 0px 20px;
-}
-
-.main-galeria .cuerpo .ilus-galeria {
-  margin: 0px 0px 20px;
-  width: 100%;
-}
-
-.main-galeria .datos-galeria {
-  padding: 20px;
-  margin-left: 15px;
-}
-
-.main-galeria .datos-galeria .titu-trabajos {
+.datos-galeria .titu-trabajos {
   color: #516f6b;
-  padding: 10px 0px;
+  padding: 0px 0px 10px 0px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.main-galeria .datos-galeria .titu-comics {
+.datos-galeria .titu-comics {
   color: #7ebdb3;
-  padding: 10px 0px;
+  padding: 0px 0px 10px 0px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.main-galeria .datos-galeria p {
-  width: 600px;
-  text-align: justify;
-  font-size: 1.05em;
+.datos-galeria p {
+  margin-bottom: 20px;
 }
 
-.main-galeria .datos-galeria p .salto-linea {
+.datos-galeria p .salto-linea {
   display: block;
+}
+
+.datos-galeria p .color-link {
+  color: #516f6b;
+  font-weight: 700;
+}
+
+.datos-galeria button {
+  background-color: #516f6b;
+  color: #eae9e7;
+  margin: 0px 10px 10px 0px;
+  width: 40px;
+  height: 30px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

@@ -1,19 +1,60 @@
 .container {
-    margin: 0px 47px;
+    display: flex;
+    justify-content: center;
     .encabezado {
     text-transform: uppercase;
     font-weight: 700;
     color: #ced17f;
     }
 }
-.form-horizontal {
-
-    width: 719px;
+.form-group {
+    font-size: 6rem;
 }
-.form-group
 .btn-primary {
-    margin-top: 20px;
     background-color: #ced17f;
     color: black;
     border: none;
 }
+
+
+@media screen and (max-width: 767px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 130px 30px 0px 30px;
+        .encabezado {
+            font-size: 2rem;   
+        }
+        .form-horizontal {
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+        }
+        .ilus-ctc {
+            width: 100%;
+            margin: 0px 0px 20px 0px;        
+        }
+
+    }
+}
+@media screen and (min-width: 1200px) { /*laptop*/
+    .container {
+        flex-direction: row-reverse;
+        padding: 300px 30px 0px 30px;
+
+        .encabezado {   
+            font-size: 3rem;
+        }
+        .form-horizontal {
+            width: 600px;
+            padding: 0px 0px 0px 50px;
+        }
+        .ilus-ctc {
+            width: 100%;
+            margin-top: 45px;
+        
+        }
+    }
+    
+    
+    
+    }

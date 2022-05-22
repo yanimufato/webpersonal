@@ -231,7 +231,7 @@ a:link, a:visited, a:active {
 @media screen and (max-width: 767px) {
   /*movil*/
   .navbar {
-    margin-top: 20px;
+    padding-top: 20px;
     font-size: 0.5rem;
     position: fixed;
     z-index: 100;
@@ -301,15 +301,16 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .titu-comics {
     font-size: 2.7rem;
   }
-  .footer ul {
+  .footer {
     font-size: 0.7rem;
     padding: 0px;
+    margin: 60px 0px 15px 0px;
   }
-  .footer ul p {
+  .footer p {
     margin: 0px;
     padding: 5px;
   }
-  .footer ul li {
+  .footer a {
     margin: 0px;
     padding: 5px;
   }
@@ -321,7 +322,7 @@ a:link, a:visited, a:active {
     font-size: 1rem;
   }
   .background .navbar {
-    margin-top: 20px;
+    padding-top: 20px;
     padding: 0px 40px;
     position: fixed;
     z-index: 100;
@@ -389,17 +390,15 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .titu-comics {
     font-size: 2.7rem;
   }
-  .footer ul {
-    font-size: 1rem;
-    padding: 0px;
-  }
-  .footer ul p {
-    margin: 0px;
-    padding: 5px;
-  }
-  .footer ul li {
-    margin: 0px;
-    padding: 5px;
+  .footer {
+    /*footer*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px 0px 20px 0px;
   }
 }
 
@@ -472,17 +471,35 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .titu-comics {
     font-size: 4rem;
   }
-  .footer ul {
-    font-size: 1.5rem;
-    padding: 0px;
+  .footer {
+    /*footer*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px 0px 40px 0px;
   }
-  .footer ul p {
-    margin: 0px;
-    padding: 10px;
+  .footer img {
+    width: 50px;
   }
-  .footer ul li {
-    margin: 0px;
-    padding: 10px;
+  .footer p {
+    padding: 0px 0px 0px 15px;
+  }
+  .footer p .salto-linea {
+    display: block;
+  }
+  .footer p .nombre-footer {
+    font-weight: 700;
+  }
+  .footer a {
+    margin-top: -20px;
+    padding: 0px 0px 0px 15px;
+  }
+  .footer .color-link {
+    font-weight: 700;
+    color: #3a8571;
   }
 }
 
@@ -555,11 +572,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 80px 0px 0px;
-}
-
-.background .footer .salto-linea {
-  display: block;
 }
 
 .background .footer img {
@@ -568,6 +580,10 @@ html {
 
 .background .footer p {
   padding: 0px 0px 0px 15px;
+}
+
+.background .footer p .salto-linea {
+  display: block;
 }
 
 .background .footer p .nombre-footer {

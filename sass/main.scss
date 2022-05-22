@@ -56,15 +56,14 @@ html {
     .footer { /*footer*/
         display: flex;
         justify-content: center;
-        margin: 80px 0px 0px;
-        .salto-linea{
-            display: block;
-        }
         img {
             width: 50px;
         }
         p {
             padding: 0px 0px 0px 15px;
+            .salto-linea{
+                display: block;
+            }
             .nombre-footer {
                 font-weight: 700;
             }

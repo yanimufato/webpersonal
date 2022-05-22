@@ -1,10 +1,9 @@
 @media screen and (max-width: 767px){ /*movil*/
     .navbar {
-        margin-top: 20px;
+       padding-top: 20px;
         font-size: 0.5rem;
         position: fixed;
         z-index: 100;
-
         .navbar-brand {
             width: 90px;
             margin-left: -10px;            
@@ -68,14 +67,15 @@
             }
         }
     }
-    .footer ul {
+    .footer {
         font-size: 0.7rem;
         padding: 0px;
+        margin: 60px 0px 15px 0px;
         p {
             margin: 0px;
             padding: 5px;
         }
-        li {
+        a {
             margin: 0px;
             padding: 5px;
         }
@@ -85,7 +85,7 @@
     .background {
         font-size: 1rem;
         .navbar {
-            margin-top: 20px;
+            padding-top: 20px;
             padding: 0px 40px;
             position: fixed;
             z-index: 100;
@@ -112,7 +112,6 @@
             padding: 10px ;
         }
     }
-
     .galeria {
         margin: 140px 20px 0px;
         padding: 0px 50px;
@@ -153,18 +152,11 @@
             }
         }
     }
-    .footer ul {
-        font-size: 1rem;
-        padding: 0px;
-        p {
-            margin: 0px;
-            padding: 5px;
-        }
-        li {
-            margin: 0px;
-            padding: 5px;
-        }
-    }
+    .footer { /*footer*/
+        display: flex;
+        justify-content: center;
+        margin: 80px 0px 20px 0px;
+    }    
 }
 
 @media screen and (min-width: 1200px) { /*laptop*/
@@ -231,17 +223,29 @@
             }
         } 
     }
-    .footer ul {
-        font-size: 1.5rem;
-        padding: 0px;
-        p {
-            margin: 0px;
-            padding: 10px;
+    .footer { /*footer*/
+        display: flex;
+        justify-content: center;
+        margin: 80px 0px 40px 0px;
+        img {
+            width: 50px;
         }
-        li {
-            margin: 0px;
-            padding: 10px;
-
+        p {
+            padding: 0px 0px 0px 15px;
+            .salto-linea{
+                display: block;
+            }
+            .nombre-footer {
+                font-weight: 700;
+            }
+        }
+        a {
+            margin-top: -20px;
+            padding: 0px 0px 0px 15px;
+        }         
+        .color-link { 
+            font-weight: 700;
+            color: #3a8571;
         }
     }
 }

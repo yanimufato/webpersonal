@@ -23,7 +23,8 @@
     .container{
         display: flex;
         flex-direction: column-reverse;
-        padding: 120px 30px 0px 30px;
+        margin: 120px 30px 0px 30px;
+        padding: 0px 70px 0px 0px;
         .encabezado {
             font-size: 2rem;   
         }
@@ -43,9 +44,10 @@
     .container {
         display: flex;
         flex-direction: row-reverse;
-        margin: 180px 50px 0px 20px;
+        margin: 148px 50px 0px 20px;
         padding: 0px 80px;
         .encabezado {   
+            padding: 12px 15px 0px 0px;
             font-size: 2rem;
         }
         .form-horizontal {
@@ -54,7 +56,8 @@
             padding: 0px 0px 0px 40px;
         }
         .ilus-ctc {
-            width: 100%;        
+            width: 100%;
+            padding-top: 10px;        
         }
     }
 

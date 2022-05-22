@@ -1,8 +1,10 @@
 @media screen and (max-width: 767px){ /*movil*/
     .navbar {
+        margin-top: 20px;
         font-size: 0.5rem;
         position: fixed;
         z-index: 100;
+
         .navbar-brand {
             width: 90px;
             margin-left: -10px;            
@@ -17,15 +19,20 @@
         .navbar-link {
             padding: 0px;
         }
-
     }
     .main .titular h1 {
         margin-top: 30px;
         padding: 90px 0px 10px;
-        font-size: 2rem;
+        font-size: 3rem;
         }
         .ilustracion {
         padding: 10px 35px 0px;
+        }
+        .titular-2 h1 {
+
+            padding: 90px 0px 10px;
+            font-size: 3rem;
+
         }
     .galeria {
         margin: 20px 20px 0px;
@@ -38,14 +45,14 @@
         display: flex;
         flex-direction: column-reverse;
         margin-top: 20px;
-        padding: 90px 0px 10px;
+        padding: 90px 0px 5px;
         .ilus-galeria {
             width: 100%;
-            padding: 8px 40px;
+            padding: 8px 35px;
         }
         .datos-galeria {
             margin: 0px;
-            padding: 8px 40px;
+            padding: 8px 35px;
             p {
                 width: 100%;                
                 font-size: 1rem;
@@ -180,7 +187,7 @@
         padding: 250px 0px 10px;
         }
         h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         padding: 30px;
         letter-spacing: 0.2rem;
         word-spacing: 1rem;
@@ -207,12 +214,10 @@
         }
         .datos-galeria {
             width: 100%;
-            position: sticky;
-            top: 1000px;
             padding: 0px 20px;
             margin-left: 15px;  
             p {
-                width: 540px;
+                width: 100%;
                 font-size: 1.5rem;
                 word-spacing: normal;
                 line-height: 2.8rem;

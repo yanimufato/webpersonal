@@ -48,7 +48,8 @@ a:link, a:visited, a:active {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 120px 30px 0px 30px;
+    margin: 120px 30px 0px 30px;
+    padding: 0px 70px 0px 0px;
   }
   .container .encabezado {
     font-size: 2rem;
@@ -73,10 +74,11 @@ a:link, a:visited, a:active {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    margin: 180px 50px 0px 20px;
+    margin: 148px 50px 0px 20px;
     padding: 0px 80px;
   }
   .container .encabezado {
+    padding: 12px 15px 0px 0px;
     font-size: 2rem;
   }
   .container .form-horizontal {
@@ -86,6 +88,7 @@ a:link, a:visited, a:active {
   }
   .container .ilus-ctc {
     width: 100%;
+    padding-top: 10px;
   }
 }
 
@@ -111,61 +114,124 @@ a:link, a:visited, a:active {
   }
 }
 
-.main-galeria {
-  margin-top: 350px;
+.main-bio .ilus-galeria {
+  width: 100%;
+  padding: 8px 40px;
 }
 
-.main-galeria .ilus-galeria {
-  margin-top: 0px;
-  width: 719px;
+.main-bio .datos-bio {
+  margin: 0px;
+  padding: 8px 40px;
 }
 
-.main-galeria .datos-galeria {
-  padding: 20px;
-  margin-left: 15px;
+.main-bio .datos-bio .titu-bio {
+  color: #e4c7b8;
+  font-weight: 700;
+  padding: 0px 0px 10px;
+  margin-top: -10px;
 }
 
-.main-galeria .datos-galeria p {
-  width: 600px;
-  font-size: 3em;
+.main-bio .datos-bio p {
+  width: 100%;
+  font-size: 1rem;
+  word-spacing: normal;
+  line-height: 1.8rem;
+  letter-spacing: normal;
+}
+
+.main-bio .datos-bio p .salto-linea {
+  display: block;
+}
+
+.main-bio .datos-bio p .color-link {
+  color: #3a8571;
 }
 
 @media screen and (max-width: 767px) {
-  .main-galeria {
+  .main-bio {
+    margin: 110px 0px 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /*tablet*/
-  .main-galeria {
+  .main-bio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 150px 70px 0px 70px;
+  }
+  .main-bio .cuerpo-bio {
+    width: 100%;
+    padding: 0px 15px 0px 15px;
+  }
+  .main-bio .ilus-galeria {
+    width: 100%;
+    padding: 5px;
+  }
+  .main-bio .datos-bio {
+    width: 600px;
+    padding: 10px 0px 0px 15px;
+  }
+  .main-bio .datos-bio p {
+    width: 100%;
+    font-size: 1rem;
+    word-spacing: normal;
+    line-height: 1.8rem;
+    letter-spacing: normal;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /*laptop*/
-  .main-galeria {
+  .main-bio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 300px 0px 10px;
+    margin: 290px 230px 0px 230px;
+    padding: 0px;
+  }
+  .main-bio .cuerpo-bio {
+    width: 100%;
+    margin: 0px;
+  }
+  .main-bio .cuerpo-bio .ilus-galeria {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .main-bio .datos-bio {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000px;
+    padding: 0px 20px;
+  }
+  .main-bio .datos-bio p {
+    width: 100%;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    line-height: 2.8rem;
+    letter-spacing: normal;
   }
 }
 
 @media screen and (max-width: 767px) {
   /*movil*/
   .navbar {
+    margin-top: 20px;
     font-size: 0.5rem;
     position: fixed;
     z-index: 100;
@@ -187,10 +253,14 @@ a:link, a:visited, a:active {
   .main .titular h1 {
     margin-top: 30px;
     padding: 90px 0px 10px;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .ilustracion {
     padding: 10px 35px 0px;
+  }
+  .titular-2 h1 {
+    padding: 90px 0px 10px;
+    font-size: 3rem;
   }
   .galeria {
     margin: 20px 20px 0px;
@@ -208,15 +278,15 @@ a:link, a:visited, a:active {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-top: 20px;
-    padding: 90px 0px 10px;
+    padding: 90px 0px 5px;
   }
   .main-galeria .ilus-galeria {
     width: 100%;
-    padding: 8px 40px;
+    padding: 8px 35px;
   }
   .main-galeria .datos-galeria {
     margin: 0px;
-    padding: 8px 40px;
+    padding: 8px 35px;
   }
   .main-galeria .datos-galeria p {
     width: 100%;
@@ -354,7 +424,7 @@ a:link, a:visited, a:active {
     padding: 250px 0px 10px;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     padding: 30px;
     letter-spacing: 0.2rem;
     word-spacing: 1rem;
@@ -386,14 +456,11 @@ a:link, a:visited, a:active {
   }
   .main-galeria .datos-galeria {
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1000px;
     padding: 0px 20px;
     margin-left: 15px;
   }
   .main-galeria .datos-galeria p {
-    width: 540px;
+    width: 100%;
     font-size: 1.5rem;
     word-spacing: normal;
     line-height: 2.8rem;
@@ -432,7 +499,6 @@ html {
 .background .navbar {
   /*navbar*/
   width: 100%;
-  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +555,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 80px 0px 30px;
+  margin: 80px 0px 0px;
 }
 
 .background .footer .salto-linea {
@@ -501,7 +567,7 @@ html {
 }
 
 .background .footer p {
-  padding: 0px 0px 0px 25px;
+  padding: 0px 0px 0px 15px;
 }
 
 .background .footer p .nombre-footer {
@@ -510,7 +576,7 @@ html {
 
 .background .footer a {
   margin-top: -20px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 0px 0px 15px;
 }
 
 .background .footer .color-link {

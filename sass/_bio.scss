@@ -1,41 +1,98 @@
-.main-galeria {
-    margin-top: 350px;
-    .ilus-galeria {
-        margin-top: 0px;
-        width: 719px;       
-    }
-    .datos-galeria {
-        padding: 20px;
-        margin-left: 15px;
-        p {
-            width: 600px;
-            font-size: 3em;
-        }
-    }
+.main-bio {
 
+    .ilus-galeria {
+        width: 100%;
+        padding: 8px 40px;       
+    }
+    .datos-bio {
+        margin: 0px;
+        padding: 8px 40px;
+        .titu-bio {
+            color: #e4c7b8;
+            font-weight: 700;
+            padding: 0px 0px 10px;
+            margin-top: -10px;
+        }
+        p {
+            width: 100%;                
+            font-size: 1rem;
+            word-spacing: normal;
+            line-height: 1.8rem;
+            letter-spacing: normal;
+            .salto-linea {
+                display: block;
+            }
+            .color-link {
+                color: #3a8571;
+            }
+        }
+        
+    }
 }
 @media screen and (max-width: 767px) {
-    .main-galeria{
+    .main-bio{        
+        margin: 110px 0px 35px;
         display: flex;
-
-
+        flex-direction: column-reverse;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px ) { /*tablet*/
-    .main-galeria{
+    .main-bio {
         display: flex;
         justify-content: center;
-
+        margin: 150px 70px 0px 70px;
+        .cuerpo-bio {
+            width: 100%;
+            padding: 0px 15px 0px 15px;
+        }
+        .ilus-galeria {
+            width: 100%;
+            padding: 5px;
+        }
+        .datos-bio {
+            width: 600px;
+            padding: 10px 0px 0px 15px;
+            p {
+                width: 100%;
+                font-size: 1rem;
+                word-spacing: normal;
+                line-height: 1.8rem;
+                letter-spacing: normal;
+            }
+        }    
     }    
 
-}
 
-@media screen and (min-width: 1200px) { /*laptop*/
-.main-galeria {
-    display: flex;
-    justify-content: center;
-    padding: 300px 0px 10px;
 }
+@media screen and (min-width: 1200px) { /*laptop*/
+    .main-bio {
+        display: flex;
+        justify-content: center;    
+        margin: 290px 230px 0px 230px;
+        padding: 0px;
+        .cuerpo-bio {
+            width: 100%;
+            margin: 0px;
+            .ilus-galeria {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+        .datos-bio {
+            width: 100%;
+            position: sticky;
+            top: 1000px;
+            padding: 0px 20px;
+  
+            p {
+                width: 100%;
+                font-size: 1.5rem;
+                word-spacing: normal;
+                line-height: 2.8rem;
+                letter-spacing: normal;
+            }
+        } 
+    }
 
 
 

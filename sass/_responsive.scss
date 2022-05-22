@@ -27,11 +27,13 @@
         .ilustracion {
         padding: 10px 35px 0px;
         }
-        .titular-2 h1 {
-
-            padding: 90px 0px 10px;
+        .titular-2 h2 {
+            padding: 0px 0px 10px;
             font-size: 3rem;
-
+            text-transform: uppercase;
+            color: #3a8571;
+            font-weight: 900;
+            text-align: center;
         }
     .galeria {
         margin: 20px 20px 0px;
@@ -109,7 +111,15 @@
         }
         .titular h1 {
             font-size: 5rem;
-            padding: 10px ;
+            padding: 10px 0px 20px;
+        }
+        .titular-2 h2 {
+            padding: 10px 0px 10px;
+            font-size: 5rem;
+            text-transform: uppercase;
+            color: #3a8571;
+            font-weight: 900;
+            text-align: center;
         }
     }
     .galeria {
@@ -177,14 +187,25 @@
     }
     .titular  {
         padding: 250px 0px 10px;
-        }
         h1 {
+            font-size: 6rem;
+            padding: 30px;
+            letter-spacing: 0.2rem;
+            word-spacing: 1rem;
+            margin-bottom: 20px;
+        }
+    }
+    .titular-2 h2 {
+        padding: 20px 0px 10px;
         font-size: 6rem;
-        padding: 30px;
+        text-transform: uppercase;
+        color: #3a8571;
+        font-weight: 900;
         letter-spacing: 0.2rem;
         word-spacing: 1rem;
-        margin-bottom: 20px;
+        text-align: center;
     }
+
     .galeria {
         margin: 300px 180px 20px;
         .ilus-secciones {

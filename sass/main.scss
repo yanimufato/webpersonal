@@ -6,10 +6,10 @@
     box-sizing: border-box;
     overflow-x: hidden
 }
+
 a:link, a:visited, a:active {
     text-decoration: none;
 }
-
 
 @import "contacto";
 @import "bio";
@@ -43,7 +43,7 @@ html {
         justify-content: center;
         h1 {
             text-transform: uppercase;
-            color: #7ebcb2;
+            color: #3a8571;
             font-weight: 900;
             text-align: center;
         }
@@ -54,22 +54,29 @@ html {
         margin-top: auto; 
         margin-bottom: 20px;       
     }
-    .footer ul { /*footer*/
+    .footer { /*footer*/
         display: flex;
         justify-content: center;
-        text-transform: uppercase;
-        color: #503748;
-        font-weight: 700;
-        margin-top: 20px;
-        p li .color-link{
-            margin: 10px;
-            color: #e736af;
+        margin: 80px 0px 30px;
+        .salto-linea{
+            display: block;
         }
-        a:hover {
-            color: #503748;
+        img {
+            width: 50px;
         }
-        a:visited {
-            color: #503748;
+        p {
+            padding: 0px 0px 0px 25px;
+            .nombre-footer {
+                font-weight: 700;
+            }
+        }
+        a {
+            margin-top: -20px;
+            padding: 0px 0px 0px 25px;
+        }         
+        .color-link { 
+            font-weight: 700;
+            color: #3a8571;
         }
     }
 }
@@ -81,7 +88,7 @@ html {
     flex-wrap: wrap;     
 }
 
-/*paginas galeria*/
+/*galeria de trabajos y comics*/
 .datos-galeria {      
     .titu-trabajos {
         color: #516f6b;

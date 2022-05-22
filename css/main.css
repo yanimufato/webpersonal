@@ -33,8 +33,10 @@ a:link, a:visited, a:active {
 
 .btn-primary {
   background-color: #ced17f;
-  color: black;
+  color: #eae9e7;
+  font-weight: 700;
   border: none;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -46,7 +48,7 @@ a:link, a:visited, a:active {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 130px 30px 0px 30px;
+    padding: 120px 30px 0px 30px;
   }
   .container .encabezado {
     font-size: 2rem;
@@ -58,6 +60,32 @@ a:link, a:visited, a:active {
   .container .ilus-ctc {
     width: 100%;
     margin: 0px 0px 20px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 180px 50px 0px 20px;
+    padding: 0px 80px;
+  }
+  .container .encabezado {
+    font-size: 2rem;
+  }
+  .container .form-horizontal {
+    width: 500px;
+    margin-top: -10px;
+    padding: 0px 0px 0px 40px;
+  }
+  .container .ilus-ctc {
+    width: 100%;
   }
 }
 
@@ -74,26 +102,20 @@ a:link, a:visited, a:active {
     font-size: 3rem;
   }
   .container .form-horizontal {
+    margin-top: -10px;
     width: 600px;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 70px;
   }
   .container .ilus-ctc {
     width: 100%;
-    margin-top: 45px;
   }
 }
 
 .main-galeria {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 350px;
 }
 
-.main-galeria .foto {
+.main-galeria .ilus-galeria {
   margin-top: 0px;
   width: 719px;
 }
@@ -105,8 +127,7 @@ a:link, a:visited, a:active {
 
 .main-galeria .datos-galeria p {
   width: 600px;
-  text-align: justify;
-  font-size: 1.05em;
+  font-size: 3em;
 }
 
 @media screen and (max-width: 767px) {
@@ -114,16 +135,30 @@ a:link, a:visited, a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+  .main-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /*laptop*/
   .main-galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 300px 0px 10px;
   }
 }
@@ -218,21 +253,24 @@ a:link, a:visited, a:active {
   .background .navbar {
     margin-top: 20px;
     padding: 0px 40px;
+    position: fixed;
+    z-index: 100;
   }
   .background .navbar-brand {
-    width: 100px;
+    width: 200px;
     margin-left: 30px;
   }
   .background .navbar-toggler {
     background-color: #503748;
   }
   .background .navbar-nav {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .background .navbar-link {
     padding: 0px 0px;
   }
   .background .main {
+    margin-top: 130px;
     padding: 10px 80px 0px;
   }
   .background .titular h1 {
@@ -240,34 +278,33 @@ a:link, a:visited, a:active {
     padding: 10px;
   }
   .galeria {
-    margin: 20px 20px 0px;
+    margin: 140px 20px 0px;
     padding: 0px 50px;
   }
   .galeria .ilus-secciones {
     width: 300px;
-    padding: 10px;
+    padding: 15px 10px;
   }
   .main-galeria {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 150px 70px 0px 70px;
   }
   .main-galeria .cuerpo {
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 15px 0px 15px;
   }
   .main-galeria .ilus-galeria {
     width: 100%;
-    padding: 8px 30px;
+    padding: 5px;
   }
   .main-galeria .datos-galeria {
-    width: 100%;
-    padding: 0px 80px;
+    width: 600px;
+    padding: 0px 0px 0px 15px;
   }
   .main-galeria .datos-galeria p {
     width: 100%;
@@ -307,10 +344,11 @@ a:link, a:visited, a:active {
   }
   .background .navbar-brand {
     width: 250px;
-    margin: 0px 75px 0px 100px;
+    margin: 0px 75px 0px 120px;
   }
   .background .navbar-nav {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 60px;
   }
   .titular {
     padding: 250px 0px 10px;
@@ -323,10 +361,10 @@ a:link, a:visited, a:active {
     margin-bottom: 20px;
   }
   .galeria {
-    margin: 350px 178px 20px;
+    margin: 300px 180px 20px;
   }
   .galeria .ilus-secciones {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .main-galeria {
     display: -webkit-box;
@@ -335,7 +373,8 @@ a:link, a:visited, a:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 40px 140px 0px 140px;
+    margin: 300px 230px 0px 230px;
+    padding: 0px;
   }
   .main-galeria .cuerpo {
     width: 100%;
@@ -343,7 +382,7 @@ a:link, a:visited, a:active {
   }
   .main-galeria .cuerpo .ilus-galeria {
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   .main-galeria .datos-galeria {
     width: 100%;
@@ -426,7 +465,7 @@ html {
 
 .background .main .titular h1 {
   text-transform: uppercase;
-  color: #7ebcb2;
+  color: #3a8571;
   font-weight: 900;
   text-align: center;
 }
@@ -442,7 +481,7 @@ html {
   margin-bottom: 20px;
 }
 
-.background .footer ul {
+.background .footer {
   /*footer*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,23 +489,33 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-transform: uppercase;
-  color: #503748;
+  margin: 80px 0px 30px;
+}
+
+.background .footer .salto-linea {
+  display: block;
+}
+
+.background .footer img {
+  width: 50px;
+}
+
+.background .footer p {
+  padding: 0px 0px 0px 25px;
+}
+
+.background .footer p .nombre-footer {
   font-weight: 700;
-  margin-top: 20px;
 }
 
-.background .footer ul p li .color-link {
-  margin: 10px;
-  color: #e736af;
+.background .footer a {
+  margin-top: -20px;
+  padding: 0px 0px 0px 25px;
 }
 
-.background .footer ul a:hover {
-  color: #503748;
-}
-
-.background .footer ul a:visited {
-  color: #503748;
+.background .footer .color-link {
+  font-weight: 700;
+  color: #3a8571;
 }
 
 /*seccion trabajos y comics*/
@@ -480,7 +529,7 @@ html {
       flex-wrap: wrap;
 }
 
-/*paginas galeria*/
+/*galeria de trabajos y comics*/
 .datos-galeria .titu-trabajos {
   color: #516f6b;
   padding: 0px 0px 10px 0px;

@@ -1,8 +1,6 @@
 .main-galeria {
-    display: flex;
-    justify-content: center;
     margin-top: 350px;
-    .foto {
+    .ilus-galeria {
         margin-top: 0px;
         width: 719px;       
     }
@@ -11,21 +9,31 @@
         margin-left: 15px;
         p {
             width: 600px;
-            text-align: justify;
-            font-size: 1.05em;
+            font-size: 3em;
         }
-}
+    }
+
 }
 @media screen and (max-width: 767px) {
     .main-galeria{
         display: flex;
-        flex-direction: column;
+
 
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px ) { /*tablet*/
+    .main-galeria{
+        display: flex;
+        justify-content: center;
+
+    }    
+
 }
 
 @media screen and (min-width: 1200px) { /*laptop*/
 .main-galeria {
+    display: flex;
+    justify-content: center;
     padding: 300px 0px 10px;
 }
 

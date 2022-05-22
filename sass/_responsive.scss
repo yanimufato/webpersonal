@@ -80,21 +80,24 @@
         .navbar {
             margin-top: 20px;
             padding: 0px 40px;
+            position: fixed;
+            z-index: 100;
         }
         .navbar-brand {
-            width: 100px;
+            width: 200px;
             margin-left: 30px;            
         }
         .navbar-toggler {
             background-color: #503748;
         }
         .navbar-nav {
-            font-size: 1.8rem;
+            font-size: 1rem;
         }
         .navbar-link {
             padding: 0px 0px;
         }
-        .main {         
+        .main {    
+            margin-top: 130px;     
             padding: 10px 80px 0px;
         }
         .titular h1 {
@@ -104,28 +107,29 @@
     }
 
     .galeria {
-        margin: 20px 20px 0px;
+        margin: 140px 20px 0px;
         padding: 0px 50px;
         .ilus-secciones {
             width: 300px;
-            padding: 10px;
+            padding: 15px 10px;
         }
     }
     .main-galeria {
         display: flex;
-        flex-direction: column-reverse;
-        margin-top: 20px;
+        justify-content: center;
+        margin: 150px 70px 0px 70px;
         .cuerpo {
             width: 100%;
-            padding: 0px 50px;
+            padding: 0px 15px 0px 15px;
         }
         .ilus-galeria {
             width: 100%;
-            padding: 8px 30px;
+            padding: 5px;
+
         }
         .datos-galeria {
-            width: 100%;
-            padding: 0px 80px;
+            width: 600px;
+            padding: 0px 0px 0px 15px;
             p {
                 width: 100%;
 
@@ -165,10 +169,11 @@
         }
         .navbar-brand{
             width: 250px;
-            margin: 0px 75px 0px 100px;
+            margin: 0px 75px 0px 120px;
         }       
         .navbar-nav {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            margin: 60px;
         }    
     }
     .titular  {
@@ -182,21 +187,22 @@
         margin-bottom: 20px;
     }
     .galeria {
-        margin: 350px 178px 20px;
+        margin: 300px 180px 20px;
         .ilus-secciones {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         } 
     }
     .main-galeria {
         display: flex;
         justify-content: center;    
-        margin: 40px 140px 0px 140px;
+        margin: 300px 230px 0px 230px;
+        padding: 0px;
         .cuerpo {
             width: 100%;
             margin: 0px 20px 0px 20px;
             .ilus-galeria {
                 width: 100%;
-                padding-bottom: 10px;
+                padding-bottom: 20px;
             }
         }
         .datos-galeria {
@@ -207,7 +213,6 @@
             margin-left: 15px;  
             p {
                 width: 540px;
-
                 font-size: 1.5rem;
                 word-spacing: normal;
                 line-height: 2.8rem;

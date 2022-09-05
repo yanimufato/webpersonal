@@ -3,8 +3,7 @@
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -13,18 +12,19 @@ a:link, a:visited, a:active {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .container .encabezado {
   text-transform: uppercase;
   font-weight: 700;
   color: #ced17f;
+}
+.container p .salto-linea {
+  display: block;
+}
+.container p .color-link {
+  color: #3a8571;
 }
 
 .form-group {
@@ -41,13 +41,8 @@ a:link, a:visited, a:active {
 
 @media screen and (max-width: 767px) {
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 120px 30px 0px 30px;
     padding: 0px 70px 0px 0px;
   }
@@ -63,17 +58,10 @@ a:link, a:visited, a:active {
     margin: 0px 0px 20px 0px;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     margin: 148px 50px 0px 20px;
     padding: 0px 80px;
   }
@@ -90,15 +78,13 @@ a:link, a:visited, a:active {
     width: 100%;
     padding-top: 10px;
   }
+  .container p {
+    font-size: 1rem;
+  }
 }
-
-@media screen and (min-width: 1200px) {
-  /*laptop*/
+@media screen and (min-width: 1200px) { /*laptop*/
   .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     padding: 300px 30px 0px 30px;
   }
   .container .encabezado {
@@ -112,25 +98,24 @@ a:link, a:visited, a:active {
   .container .ilus-ctc {
     width: 100%;
   }
+  .container p {
+    margin-top: 70px;
+    font-size: 1.5rem;
+  }
 }
-
 .main-bio .ilus-galeria {
   width: 100%;
   padding: 8px 40px;
 }
-
 .main-bio .datos-bio {
   margin: 0px;
   padding: 8px 40px;
 }
-
 .main-bio .datos-bio .titu-bio {
   color: #e4c7b8;
   font-weight: 700;
-  padding: 0px 0px 10px;
-  margin-top: -10px;
+  padding: 0px 0px 20px;
 }
-
 .main-bio .datos-bio p {
   width: 100%;
   font-size: 1rem;
@@ -138,11 +123,9 @@ a:link, a:visited, a:active {
   line-height: 1.8rem;
   letter-spacing: normal;
 }
-
 .main-bio .datos-bio p .salto-linea {
   display: block;
 }
-
 .main-bio .datos-bio p .color-link {
   color: #3a8571;
 }
@@ -150,25 +133,14 @@ a:link, a:visited, a:active {
 @media screen and (max-width: 767px) {
   .main-bio {
     margin: 110px 0px 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/
   .main-bio {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 150px 70px 0px 70px;
   }
   .main-bio .cuerpo-bio {
@@ -191,16 +163,10 @@ a:link, a:visited, a:active {
     letter-spacing: normal;
   }
 }
-
-@media screen and (min-width: 1200px) {
-  /*laptop*/
+@media screen and (min-width: 1200px) { /*laptop*/
   .main-bio {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 290px 230px 0px 230px;
     padding: 0px;
   }
@@ -227,9 +193,7 @@ a:link, a:visited, a:active {
     letter-spacing: normal;
   }
 }
-
-@media screen and (max-width: 767px) {
-  /*movil*/
+@media screen and (max-width: 767px) { /*movil*/
   .navbar {
     padding-top: 20px;
     font-size: 0.5rem;
@@ -274,13 +238,8 @@ a:link, a:visited, a:active {
     padding: 10px;
   }
   .main-galeria {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin-top: 20px;
     padding: 90px 0px 5px;
   }
@@ -306,22 +265,14 @@ a:link, a:visited, a:active {
     font-size: 2.7rem;
   }
   .footer {
-    font-size: 0.7rem;
-    padding: 0px;
-    margin: 60px 0px 15px 0px;
+    margin: 120px 0px 15px 0px;
   }
   .footer p {
-    margin: 0px 0px 20px;
-    padding: 5px;
-  }
-  .footer a {
-    margin-top: 0px;
-    padding: 5px;
+    font-size: 0.6rem;
+    padding: 0px 25px 0px 25px;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/
   .background {
     font-size: 1rem;
   }
@@ -369,12 +320,8 @@ a:link, a:visited, a:active {
     padding: 15px 10px;
   }
   .main-galeria {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 150px 70px 0px 70px;
   }
   .main-galeria .cuerpo {
@@ -402,20 +349,14 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .titu-comics {
     font-size: 2.7rem;
   }
-  .footer {
-    /*footer*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 80px 0px 20px 0px;
+  .footer { /*footer*/
+    margin: 90px 0px 20px 0px;
+  }
+  .footer p {
+    padding: 0px 75px 0px 75px;
   }
 }
-
-@media screen and (min-width: 1200px) {
-  /*laptop*/
+@media screen and (min-width: 1200px) { /*laptop*/
   .background {
     font-size: 1rem;
   }
@@ -435,15 +376,15 @@ a:link, a:visited, a:active {
     padding: 250px 0px 10px;
   }
   .titular h1 {
-    font-size: 6rem;
+    font-size: 5.2rem;
     padding: 30px;
     letter-spacing: 0.2rem;
     word-spacing: 1rem;
     margin-bottom: 20px;
   }
   .titular-2 h2 {
-    padding: 20px 0px 10px;
-    font-size: 6rem;
+    padding: 30px 0px 10px;
+    font-size: 5.5rem;
     text-transform: uppercase;
     color: #3a8571;
     font-weight: 900;
@@ -458,12 +399,8 @@ a:link, a:visited, a:active {
     margin-bottom: 80px;
   }
   .main-galeria {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 300px 230px 0px 230px;
     padding: 0px;
   }
@@ -493,38 +430,13 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .titu-comics {
     font-size: 4rem;
   }
-  .footer {
-    /*footer*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .footer { /*footer*/
     margin: 80px 0px 40px 0px;
   }
-  .footer img {
-    width: 50px;
-  }
   .footer p {
-    padding: 0px 0px 0px 15px;
-  }
-  .footer p .salto-linea {
-    display: block;
-  }
-  .footer p .nombre-footer {
-    font-weight: 700;
-  }
-  .footer a {
-    margin-top: -20px;
-    padding: 0px 0px 0px 15px;
-  }
-  .footer .color-link {
-    font-weight: 700;
-    color: #3a8571;
+    padding: 0px 175px 0px 175px;
   }
 }
-
 /*index*/
 html {
   font-size: 10px;
@@ -534,102 +446,47 @@ html {
   background-color: #eae9e7;
   overflow-x: hidden;
 }
-
-.background .navbar {
-  /*navbar*/
+.background .navbar { /*navbar*/
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #eae9e7;
 }
-
 .background .navbar .navbar-nav {
   text-transform: uppercase;
 }
-
 .background .navbar .navbar-nav .nav-link {
   width: 100%;
   color: #503748;
   font-weight: 700;
   padding: 5px 40px;
 }
-
-.background .main .titular {
-  /*cuerpo*/
-  display: -webkit-box;
-  display: -ms-flexbox;
+.background .main .titular { /*cuerpo*/
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .background .main .titular h1 {
   text-transform: uppercase;
   color: #3a8571;
   font-weight: 900;
   text-align: center;
 }
-
 .background .ilustracion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: auto;
   margin-bottom: 20px;
 }
-
-.background .footer {
-  /*footer*/
-  display: -webkit-box;
-  display: -ms-flexbox;
+.background .footer { /*footer*/
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.background .footer img {
-  width: 50px;
-}
-
-.background .footer p {
-  padding: 0px 0px 0px 15px;
-}
-
-.background .footer p .salto-linea {
-  display: block;
-}
-
-.background .footer p .nombre-footer {
-  font-weight: 700;
-}
-
-.background .footer a {
-  padding: 0px 0px 0px 15px;
-}
-
-.background .footer .color-link {
-  font-weight: 700;
-  color: #3a8571;
+  justify-content: center;
 }
 
 /*seccion trabajos y comics*/
 .galeria {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*galeria de trabajos y comics*/
@@ -639,27 +496,22 @@ html {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .datos-galeria .titu-comics {
   color: #7ebdb3;
   padding: 0px 0px 10px 0px;
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .datos-galeria p {
   margin-bottom: 20px;
 }
-
 .datos-galeria p .salto-linea {
   display: block;
 }
-
 .datos-galeria p .color-link {
   color: #516f6b;
   font-weight: 700;
 }
-
 .datos-galeria button {
   background-color: #516f6b;
   color: #eae9e7;

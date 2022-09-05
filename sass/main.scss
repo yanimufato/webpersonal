@@ -56,25 +56,6 @@ html {
     .footer { /*footer*/
         display: flex;
         justify-content: center;
-        img {
-            width: 50px;
-        }
-        p {
-            padding: 0px 0px 0px 15px;
-            .salto-linea{
-                display: block;
-            }
-            .nombre-footer {
-                font-weight: 700;
-            }
-        }
-        a {
-            padding: 0px 0px 0px 15px;
-        }         
-        .color-link { 
-            font-weight: 700;
-            color: #3a8571;
-        }
     }
 }
 

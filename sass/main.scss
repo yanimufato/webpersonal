@@ -56,6 +56,13 @@ html {
     .footer { /*footer*/
         display: flex;
         justify-content: center;
+        background-color: #503748;
+        height: 70px;
+        color: #eae9e7;
+        .color-link-foo {
+            color: #eae9e7;
+            font-weight: 700;
+    }
     }
 }
 

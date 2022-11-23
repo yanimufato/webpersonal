@@ -232,8 +232,8 @@ a:link, a:visited, a:active {
     padding: 0px;
   }
   .main .titular h1 {
-    margin-top: 30px;
-    padding: 90px 0px 10px;
+    margin: 140px 0px 0px;
+    padding: 0px;
     font-size: 3rem;
   }
   .ilustracion {
@@ -452,10 +452,10 @@ a:link, a:visited, a:active {
     margin-top: 100px;
   }
   .footer { /*footer*/
-    margin: 80px 0px 40px 0px;
+    margin: 180px 0px 0px 0px;
   }
   .footer p {
-    padding: 0px 175px 0px 175px;
+    padding: 30px 15vw 0px 15vw;
   }
 }
 /*index*/
@@ -501,6 +501,13 @@ html {
 .background .footer { /*footer*/
   display: flex;
   justify-content: center;
+  background-color: #503748;
+  height: 70px;
+  color: #eae9e7;
+}
+.background .footer .color-link-foo {
+  color: #eae9e7;
+  font-weight: 700;
 }
 
 /*seccion trabajos y comics*/

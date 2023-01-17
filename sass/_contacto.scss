@@ -33,8 +33,7 @@ a:link, a:visited, a:active {
 @media screen and (max-width: 767px) {
     .container{
         display: flex;
-        flex-direction: column-reverse;
-        padding: 120px 30px 0px 30px;
+        flex-direction: column-reverse;        
         margin: 120px 30px 0px 30px;
         padding: 0px 70px 0px 0px;
         .encabezado {
@@ -49,13 +48,13 @@ a:link, a:visited, a:active {
             margin: 0px 0px 20px 0px;        
         }
     }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1199px ) { /*tablet*/
     .container {
         display: flex;
         flex-direction: row-reverse;
-        margin: 180px 50px 0px 20px;
-        margin: 148px 50px 0px 20px;
+        margin: 148px 50px 160px 20px;
         padding: 0px 80px;
         .encabezado {   
             padding: 12px 15px 0px 0px;

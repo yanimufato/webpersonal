@@ -51,62 +51,31 @@
       </nav>
     </header>
 
-    <div class="container"> <!--cuerpo-->
-      <div class="row">
-          <div class="col-md-12">
-              <div class="well well-sm">
-                <form id="form" class="form-horizontal" action="https://formspree.io/f/xvoyzeaq" method="POST">
-                      <fieldset>
-                          <legend class="encabezado">Hola, escribime.</legend>
+    <form class="container" action="https://api.web3forms.com/submit" method="POST">
 
-                          <div class="form-group">
-                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                              <div class="col-md-8">
-                              <div class="col-md-9">
-                                  <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                              </div>
-                          </div>
-
-                          <div class="form-group">
-                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                              <div class="col-md-8">
-                              <div class="col-md-9">
-                                  <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                              </div>
-                          </div>
-
-
-                          <div class="form-group">
-                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                              <div class="col-md-8">
-                              <div class="col-md-9">
-                                  <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="7"></textarea>
-                              </div>
-                          </div>
+      <input type="hidden" name="access_key" value="1a154ae0-31c8-4ed6-b62c-9e7bc0fef92b">
   
-                          <div class="form-group">
-                              <div class="col-md-12">
-                                  <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                              </div>
-                          </div>
-                      </fieldset>
-                  </form>
-              </div>
-          </div>
-      </div>
+      <input type="text" name="name" required>
+      <input type="email" name="email" required>
+      <textarea name="message" required></textarea>
+      <input type="hidden" name="redirect" value="https://yanimufato.com/secciones/contact.html">
+  
+      <button type="submit">Submit Form</button>
+  
+  </form>
       <div>
         <img class="ilus-ctc" src="../img/contact.png" alt="Contacto">
       </div>
   </div>  
     
+  <footer>  <!--footer-->
 
-     <!--footer-->
-    <footer class="footer"> 
-      <div class="footer">
-        <p>© YANI MUFATO. Todos los derechos reservados</p>
-        <p>Diseñado por Yani Mufato</p>
-      </div>
-    </footer>
+    <div class="footer">
+        <p class="datosYaniFooter">© Yani Mufato <span class="salto-linea"><span class="salto-linea">Todos los derechos reservados</span> <span class="salto-linea">- <span class="salto-linea"><a href="https://www.instagram.com/yanimufato/" target="_blank"> <img class="logoIg" src="../img/icons8-instagram.svg" alt="instagram"></a><a href="https://twitter.com/YaniMufato" target="_blank"> <img class="logoIg" src="../img/icons8-twitter.svg" alt="twitter"></a></span></span></p>
+        <p class="datosPancitoFooter"></span> Diseñado por <span class="salto-linea"><a class="color-link-foo" href="https://www.pancito.com.ar" target="blank">Pancito Studio</a></p>
+    </div>
+    
+  </footer> 
  
     <!--formulario-->
 <script>

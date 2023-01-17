@@ -50,7 +50,6 @@ a:link, a:visited, a:active {
   .container {
     display: flex;
     flex-direction: column-reverse;
-    padding: 120px 30px 0px 30px;
     margin: 120px 30px 0px 30px;
     padding: 0px 70px 0px 0px;
   }
@@ -70,8 +69,7 @@ a:link, a:visited, a:active {
   .container {
     display: flex;
     flex-direction: row-reverse;
-    margin: 180px 50px 0px 20px;
-    margin: 148px 50px 0px 20px;
+    margin: 148px 50px 160px 20px;
     padding: 0px 80px;
   }
   .container .encabezado {
@@ -157,7 +155,7 @@ a:link, a:visited, a:active {
   .main-bio {
     display: flex;
     justify-content: center;
-    margin: 150px 70px 0px 70px;
+    margin: 150px 70px 120px 70px;
   }
   .main-bio .cuerpo-bio {
     width: 100%;
@@ -212,6 +210,8 @@ a:link, a:visited, a:active {
 }
 @media screen and (max-width: 767px) { /*movil*/
   .navbar {
+    display: flex;
+    justify-content: space-around;
     padding-top: 20px;
     font-size: 0.5rem;
     position: fixed;
@@ -222,30 +222,33 @@ a:link, a:visited, a:active {
     margin-left: -10px;
   }
   .navbar .navbar-toggler {
-    background-color: #7ebcb2;
+    background-color: #503748;
     margin-top: 10px;
   }
   .navbar .navbar-nav {
     font-size: 1rem;
   }
+  .navbar .navbar-nav .nav-link {
+    color: #503748;
+    padding: 5px 40px;
+  }
   .navbar .navbar-link {
     padding: 0px;
   }
   .main .titular h1 {
-    margin: 140px 0px 0px;
-    padding: 0px;
+    margin: 20vh 0px 0vh;
+    padding-bottom: 1vh;
     font-size: 3rem;
+    line-height: 1.4em;
   }
   .ilustracion {
-    padding: 10px 35px 0px;
+    padding: 5vh 10vw 0px;
   }
   .titular-2 h2 {
-    padding: 0px 0px 10px;
+    padding: 5vh 0px 1vh;
+    margin: 0px;
     font-size: 3rem;
-    text-transform: uppercase;
-    color: #3a8571;
-    font-weight: 900;
-    text-align: center;
+    line-height: 1.4em;
   }
   .galeria {
     margin: 20px 20px 0px;
@@ -282,14 +285,29 @@ a:link, a:visited, a:active {
     font-size: 2.7rem;
   }
   .footer {
-    margin: 120px 0px 15px 0px;
+    margin: 120px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
   }
-  .footer p {
-    font-size: 0.6rem;
-    padding: 0px 25px 0px 25px;
+  .footer .datosYaniFooter {
+    font-size: 1em;
+    padding: 0vh 0vw 0vh 10vw;
+  }
+  .footer .datosYaniFooter .salto-linea {
+    display: block;
+  }
+  .footer .logoIg {
+    width: 20px;
+    padding: 3px 3px 10px 0px;
+  }
+  .footer .datosPancitoFooter {
+    font-size: 1em;
+    padding: 0vh 0vw 3vh 10vw;
+  }
+  .footer .datosPancitoFooter .salto-linea {
+    display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) { /*tablet*/
   .background {
     font-size: 1rem;
   }
@@ -301,16 +319,24 @@ a:link, a:visited, a:active {
   }
   .background .navbar-brand {
     width: 200px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .background .navbar-toggler {
     background-color: #503748;
   }
   .background .navbar-nav {
     font-size: 1rem;
+    padding: 0px 10px;
   }
-  .background .navbar-link {
-    padding: 0px 0px;
+  .background .navbar-nav .nav-item {
+    padding: 0px 10px;
+  }
+  .background .navbar-nav .nav-item .nav-link {
+    width: 100%;
+    background-color: #503748;
+    color: #eae9e7;
+    padding: 5px 10px;
+    letter-spacing: 0.1em;
   }
   .background .main {
     margin-top: 130px;
@@ -329,7 +355,7 @@ a:link, a:visited, a:active {
     text-align: center;
   }
   .galeria {
-    margin: 140px 20px 0px;
+    margin: 140px 20px 130px;
     padding: 0px 50px;
   }
   .galeria .ilus-secciones {
@@ -366,14 +392,30 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .titu-comics {
     font-size: 2.7rem;
   }
-  .footer { /*footer*/
-    margin: 90px 0px 20px 0px;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
   }
-  .footer p {
-    padding: 0px 75px 0px 75px;
+  .footer .datosYaniFooter {
+    font-size: 1em;
+  }
+  .footer .datosYaniFooter .salto-linea {
+    display: block;
+  }
+  .footer .logoIg {
+    width: 20px;
+    padding: 10px 3px 10px 0px;
+  }
+  .footer .datosPancitoFooter {
+    font-size: 1em;
+  }
+  .footer .datosPancitoFooter .salto-linea {
+    display: block;
   }
 }
-@media screen and (min-width: 1200px) { /*laptop*/
+@media screen and (min-width: 1024px) { /*laptop*/
   .background {
     font-size: 1rem;
   }
@@ -386,8 +428,18 @@ a:link, a:visited, a:active {
     margin: 0px 75px 0px 120px;
   }
   .background .navbar-nav {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     margin: 60px;
+  }
+  .background .navbar-nav .nav-item {
+    padding: 0px 10px 0px 80px;
+  }
+  .background .navbar-nav .nav-item .nav-link {
+    width: 100%;
+    background-color: #503748;
+    color: #eae9e7;
+    padding: 5px 10px;
+    letter-spacing: 0.1em;
   }
   .titular {
     padding: 250px 0px 10px;
@@ -451,11 +503,27 @@ a:link, a:visited, a:active {
   .main-galeria .datos-galeria .boton {
     margin-top: 100px;
   }
-  .footer { /*footer*/
-    margin: 180px 0px 0px 0px;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
   }
-  .footer p {
-    padding: 30px 15vw 0px 15vw;
+  .footer .datosYaniFooter {
+    font-size: 1em;
+  }
+  .footer .datosYaniFooter .salto-linea {
+    display: block;
+  }
+  .footer .logoIg {
+    width: 20px;
+    padding: 10px 3px 10px 0px;
+  }
+  .footer .datosPancitoFooter {
+    font-size: 1em;
+  }
+  .footer .datosPancitoFooter .salto-linea {
+    display: block;
   }
 }
 /*index*/
@@ -469,18 +537,13 @@ html {
 }
 .background .navbar { /*navbar*/
   width: 100%;
-  display: flex;
-  justify-content: center;
   background-color: #eae9e7;
 }
 .background .navbar .navbar-nav {
   text-transform: uppercase;
 }
 .background .navbar .navbar-nav .nav-link {
-  width: 100%;
-  color: #503748;
   font-weight: 700;
-  padding: 5px 40px;
 }
 .background .main .titular { /*cuerpo*/
   display: flex;
@@ -488,7 +551,7 @@ html {
 }
 .background .main .titular h1 {
   text-transform: uppercase;
-  color: #3a8571;
+  color: #503748;
   font-weight: 900;
   text-align: center;
 }
@@ -496,18 +559,23 @@ html {
   display: flex;
   justify-content: center;
   margin-top: auto;
-  margin-bottom: 20px;
+}
+.background .titular-2 h2 {
+  text-transform: uppercase;
+  color: #503748;
+  font-weight: 900;
+  text-align: center;
 }
 .background .footer { /*footer*/
-  display: flex;
-  justify-content: center;
   background-color: #503748;
-  height: 70px;
   color: #eae9e7;
 }
 .background .footer .color-link-foo {
   color: #eae9e7;
   font-weight: 700;
+}
+.background .footer .salto-linea {
+  display: block;
 }
 
 /*seccion trabajos y comics*/

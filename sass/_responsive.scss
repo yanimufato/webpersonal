@@ -1,6 +1,8 @@
 @media screen and (max-width: 767px){ /*movil*/
     .navbar {
-       padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
         font-size: 0.5rem;
         position: fixed;
         z-index: 100;
@@ -9,31 +11,34 @@
             margin-left: -10px;            
         }
         .navbar-toggler {
-            background-color: #7ebcb2;
+            background-color: #503748;
             margin-top: 10px;
         }
         .navbar-nav {
             font-size: 1rem;
+            .nav-link {
+                color: #503748;
+                padding: 5px 40px;
+            }
         }
         .navbar-link {
             padding: 0px;
         }
     }
     .main .titular h1 {
-        margin: 140px 0px 0px;
-        padding: 0px;
+        margin: 20vh 0px 0vh;
+        padding-bottom: 1vh;
         font-size: 3rem;
+        line-height: 1.4em;
         }
         .ilustracion {
-        padding: 10px 35px 0px;
+        padding: 5vh 10vw 0px;
         }
         .titular-2 h2 {
-            padding: 0px 0px 10px;
+            padding: 5vh 0px 1vh;
+            margin: 0px;
             font-size: 3rem;
-            text-transform: uppercase;
-            color: #3a8571;
-            font-weight: 900;
-            text-align: center;
+            line-height: 1.4em;
         }
     .galeria {
         margin: 20px 20px 0px;
@@ -70,15 +75,29 @@
         }
     }
     .footer {
-        margin: 120px 0px 15px 0px;
-        p {
-            font-size: 0.6rem;
-            padding: 0px 25px 0px 25px;
+        margin: 120px 0px 0px 0px;
+        padding: 25px 0px 0px 0px;
+        .datosYaniFooter {            
+            font-size: 1em;
+            padding: 0vh 0vw 0vh 10vw;
+            .salto-linea {
+                display: block;
+            }
         }
-
+        .logoIg {
+            width: 20px;
+            padding: 3px 3px 10px 0px;
+        }
+        .datosPancitoFooter {            
+            font-size: 1em;
+            padding: 0vh 0vw 3vh 10vw;
+            .salto-linea {
+                display: block;
+            }
+        }
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px ) { /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px ) { /*tablet*/
     .background {
         font-size: 1rem;
         .navbar {
@@ -89,16 +108,25 @@
         }
         .navbar-brand {
             width: 200px;
-            margin-left: 30px;            
+            margin-left: 20px;            
         }
         .navbar-toggler {
             background-color: #503748;
         }
         .navbar-nav {
             font-size: 1rem;
-        }
-        .navbar-link {
-            padding: 0px 0px;
+            padding: 0px 10px;
+            .nav-item {
+                padding: 0px 10px;
+                .nav-link {
+                    width: 100%;
+                    background-color: #503748;
+                    color: #eae9e7;
+                    padding: 5px 10px;
+                    letter-spacing: 0.1em;
+                }
+            }
+
         }
         .main {    
             margin-top: 130px;     
@@ -118,7 +146,7 @@
         }
     }
     .galeria {
-        margin: 140px 20px 0px;
+        margin: 140px 20px 130px;
         padding: 0px 50px;
         .ilus-secciones {
             width: 300px;
@@ -157,15 +185,31 @@
             }
         }
     }
-    .footer { /*footer*/
-        margin: 90px 0px 20px 0px;
-        p {
-            padding: 0px 75px 0px 75px;
+    .footer {
+        display: flex;
+        justify-content: space-around;        
+        margin: 120px 0px 0px 0px;
+        padding: 15px 0px 0px 0px;
+        .datosYaniFooter {            
+            font-size: 1em;
+            .salto-linea {
+                display: block;
+            }
         }
-    }    
+        .logoIg {
+            width: 20px;
+            padding: 10px 3px 10px 0px;
+        }
+        .datosPancitoFooter {            
+            font-size: 1em;
+            .salto-linea {
+                display: block;
+            }
+        }
+    }
 }
 
-@media screen and (min-width: 1200px) { /*laptop*/
+@media screen and (min-width: 1024px) { /*laptop*/
     .background {
         font-size: 1rem;
         .navbar { 
@@ -177,8 +221,18 @@
             margin: 0px 75px 0px 120px;
         }       
         .navbar-nav {
-            font-size: 2.5rem;
+            font-size: 1.3rem;
             margin: 60px;
+            .nav-item {
+                padding: 0px 10px 0px 80px;
+                .nav-link {
+                    width: 100%;
+                    background-color: #503748;
+                    color: #eae9e7;
+                    padding: 5px 10px;
+                    letter-spacing: 0.1em;
+                }
+            }
         }    
     }
     .titular  {
@@ -244,10 +298,26 @@
             }
         } 
     }
-    .footer { /*footer*/        
-        margin: 180px 0px 0px 0px;
-        p {
-            padding: 30px 15vw 0px 15vw;
+    .footer {
+        display: flex;
+        justify-content: space-around;        
+        margin: 120px 0px 0px 0px;
+        padding: 15px 0px 0px 0px;
+        .datosYaniFooter {            
+            font-size: 1em;
+            .salto-linea {
+                display: block;
+            }
+        }
+        .logoIg {
+            width: 20px;
+            padding: 10px 3px 10px 0px;
+        }
+        .datosPancitoFooter {            
+            font-size: 1em;
+            .salto-linea {
+                display: block;
+            }
         }
     }
 }

@@ -11,13 +11,13 @@
             margin-left: -10px;            
         }
         .navbar-toggler {
-            background-color: #503748;
+            background-color: $colorVioleta;
             margin-top: 10px;
         }
         .navbar-nav {
             font-size: 1rem;
             .nav-link {
-                color: #503748;
+                color: $colorVioleta;
                 padding: 5px 40px;
             }
         }
@@ -41,10 +41,24 @@
             line-height: 1.4em;
         }
     .galeria {
-        margin: 20px 20px 0px;
-        padding: 90px 0px 10px;
+        margin: 110px 20px 0px;
         .ilus-secciones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px;
+            .tituloGrilla {
+                position: absolute;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                color: $colorVioleta;
+                font-weight: 700;
+                font-size: 1.3em;
+                z-index: -1;                
+            }
+            .img-fluid:hover {
+                opacity: 0.20;                
+            }
         }
     }
     .main-galeria {
@@ -75,25 +89,38 @@
         }
     }
     .footer {
+        font-family: 'Roboto', sans-serif;
         margin: 120px 0px 0px 0px;
-        padding: 25px 0px 0px 0px;
-        .datosYaniFooter {            
-            font-size: 1em;
-            padding: 0vh 0vw 0vh 10vw;
-            .salto-linea {
-                display: block;
+        padding-top: 25px;
+        .datosYaniFooter {
+            padding-left: 5vh;
+            .titFooter {
+                margin: 0px;
+                font-size: 1.3em;
+                font-weight: 700;
+                margin-bottom: 10px;
             }
-        }
-        .logoIg {
-            width: 20px;
-            padding: 3px 3px 10px 0px;
-        }
-        .datosPancitoFooter {            
-            font-size: 1em;
-            padding: 0vh 0vw 3vh 10vw;
-            .salto-linea {
-                display: block;
+            .mailFooter {
+                margin-bottom: 5px;
             }
+            .mailto {
+                color: $colorBlanco;
+                font-size: 1.3em;
+            }
+            .iconosFooter {
+                display: flex;
+                a {
+                    color: $colorBlanco;
+                    padding-right: 10px;
+                    .logoIg {
+                        width: 20px;    
+                    }
+                }
+            }            
+        }
+        .datosPancitoFooter {
+            margin-top: 30px;
+            padding-left: 5vh;
         }
     }
 }
@@ -111,22 +138,24 @@
             margin-left: 20px;            
         }
         .navbar-toggler {
-            background-color: #503748;
+            background-color: $colorVioleta;
         }
         .navbar-nav {
-            font-size: 1rem;
+            font-size: 1em;
             padding: 0px 10px;
             .nav-item {
                 padding: 0px 10px;
                 .nav-link {
                     width: 100%;
-                    background-color: #503748;
-                    color: #eae9e7;
+                    color: $colorVioleta;
                     padding: 5px 10px;
                     letter-spacing: 0.1em;
+                    &:hover {
+                        background-color: $colorVioleta;
+                        color: $colorBlanco;
+                    }
                 }
             }
-
         }
         .main {    
             margin-top: 130px;     
@@ -140,17 +169,31 @@
             padding: 10px 0px 10px;
             font-size: 5rem;
             text-transform: uppercase;
-            color: #3a8571;
+            color: $colorVerde;
             font-weight: 900;
             text-align: center;
         }
     }
     .galeria {
-        margin: 140px 20px 130px;
-        padding: 0px 50px;
+        margin: 140px 70px 130px;
         .ilus-secciones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 300px;
             padding: 15px 10px;
+            .tituloGrilla {
+                position: absolute;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                color: $colorVioleta;
+                font-weight: 700;
+                font-size: 1.3em;
+                z-index: -1;                
+            }
+            .img-fluid:hover {
+                opacity: 0.20;                
+            }
         }
     }
     .main-galeria {
@@ -187,50 +230,66 @@
     }
     .footer {
         display: flex;
-        justify-content: space-around;        
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
         margin: 120px 0px 0px 0px;
-        padding: 15px 0px 0px 0px;
-        .datosYaniFooter {            
-            font-size: 1em;
-            .salto-linea {
-                display: block;
+        padding: 25px 0px 15px;
+        .datosYaniFooter {
+            padding-left: 10vh;
+            .titFooter {
+                margin: 0px;
+                font-size: 1.3em;
+                font-weight: 700;
+                margin-bottom: 10px;
             }
-        }
-        .logoIg {
-            width: 20px;
-            padding: 10px 3px 10px 0px;
-        }
-        .datosPancitoFooter {            
-            font-size: 1em;
-            .salto-linea {
-                display: block;
+            .mailFooter {
+                margin-bottom: 5px;
             }
+            .mailto {
+                color: $colorBlanco;
+                font-size: 1.3em;
+            }
+            .iconosFooter {
+                display: flex;
+                a {
+                    color: $colorBlanco;
+                    padding-right: 10px;
+                    .logoIg {
+                        width: 20px;    
+                    }
+                }
+            }            
+        }
+        .datosPancitoFooter {
+            padding-right: 10vh;
         }
     }
 }
 
 @media screen and (min-width: 1024px) { /*laptop*/
-    .background {
-        font-size: 1rem;
+    .background {        
         .navbar { 
             position: fixed;
             z-index: 100;
         }
         .navbar-brand{
-            width: 250px;
-            margin: 0px 75px 0px 120px;
+            width: 150px;
+            margin: 0px 0px 0px 15vh;
         }       
         .navbar-nav {
-            font-size: 1.3rem;
-            margin: 60px;
-            .nav-item {
+            font-size: 1.3em;
+            margin: 5vh 0px 0px 35vh;
+            .nav-item {                
                 padding: 0px 10px 0px 80px;
                 .nav-link {
                     width: 100%;
-                    background-color: #503748;
-                    color: #eae9e7;
+                    color: #503748;
                     padding: 5px 10px;
                     letter-spacing: 0.1em;
+                    &:hover {
+                        background-color: $colorVioleta;
+                        color: $colorBlanco;
+                    }
                 }
             }
         }    
@@ -259,7 +318,24 @@
     .galeria {
         margin: 300px 180px 20px;
         .ilus-secciones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
             margin-bottom: 80px;
+            .tituloGrilla {
+                position: absolute;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                color: $colorVioleta;
+                font-weight: 700;
+                font-size: 1.5em;                
+                z-index: -1;                
+            }
+            .img-fluid:hover {
+                opacity: 0.20;                
+            }
+
         } 
     }
     .main-galeria {
@@ -300,22 +376,43 @@
     }
     .footer {
         display: flex;
-        justify-content: space-around;        
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
         margin: 120px 0px 0px 0px;
-        padding: 15px 0px 0px 0px;
-        .datosYaniFooter {            
-            font-size: 1em;
-            .salto-linea {
-                display: block;
+        padding: 25px 0px 35px;
+        .datosYaniFooter {
+            padding-left: 30vh;
+            .titFooter {
+                margin: 0px;
+                font-size: 1.3em;
+                font-weight: 700;
+                margin-bottom: 10px;
             }
+            .mailFooter {
+                margin-bottom: 5px;
+            }
+            .mailto {
+                color: $colorBlanco;
+                font-size: 1.3em;
+            }
+            .iconosFooter {
+                display: flex;
+                a {
+                    color: $colorBlanco;
+                    padding-right: 10px;
+                    .logoIg {
+                        width: 20px;    
+                    }
+                }
+            }            
         }
-        .logoIg {
-            width: 20px;
-            padding: 10px 3px 10px 0px;
-        }
-        .datosPancitoFooter {            
-            font-size: 1em;
-            .salto-linea {
+        .datosPancitoFooter {
+            text-align: right;
+            padding-right: 30vh;
+            .yaniCopy {
+                margin-bottom: 10px;
+            }
+            .salto-linea{
                 display: block;
             }
         }

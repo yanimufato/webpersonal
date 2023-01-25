@@ -10,34 +10,43 @@
 a:link, a:visited, a:active {
     text-decoration: none;
 }
+$colorVioleta : #503748;
+$colorBlanco: #eae9e7;
+$colorAmarillo: #ced17f;
+$colorVerde: #516f6b;
+$colorCeleste: #7ebdb3;
 
 @import "contacto";
 @import "bio";
 @import "responsive";
+
+
+
 
 /*index*/
 html {
     font-size: 10px;
 }
 .background {  
-    background-color: #eae9e7;     
-    overflow-x: hidden;    
+   background-color: $colorBlanco;      
+    overflow-x: hidden;        
     .navbar { /*navbar*/
+        font-family: 'Roboto', sans-serif;
         width: 100%;
-        background-color: #eae9e7;
+        background-color: $colorBlanco;
         .navbar-nav {            
             text-transform: uppercase;
             .nav-link {            
-                font-weight: 700;                
+                font-weight: 900;                
             }
         }        
     }
     .main .titular {/*cuerpo*/
         display: flex;
         justify-content: center;
-        h1 {
+        h1 {            
             text-transform: uppercase;
-            color: #503748;
+            color: $colorVioleta;
             font-weight: 900;
             text-align: center;
         }
@@ -49,19 +58,16 @@ html {
     }
     .titular-2 h2 {
         text-transform: uppercase;
-        color: #503748;
+        color: $colorVioleta;
         font-weight: 900;
         text-align: center;
     }
     .footer { /*footer*/
-        background-color: #503748;        
-        color: #eae9e7;
-        .color-link-foo {
-            color: #eae9e7;
+        background-color: $colorVioleta;        
+        color: $colorBlanco;
+        a {
+            color: $colorBlanco;
             font-weight: 700;
-        }
-        .salto-linea {
-            display: block;
         }
     }
 }
@@ -76,13 +82,13 @@ html {
 /*galeria de trabajos y comics*/
 .datos-galeria {      
     .titu-trabajos {
-        color: #516f6b;
+        color: $colorVerde;
         padding: 0px 0px 10px 0px;                 
         text-transform: uppercase;
         font-weight: 700;
     }
     .titu-comics {
-        color: #7ebdb3;
+        color: $colorCeleste;
         padding: 0px 0px 10px 0px;    
         text-transform: uppercase;
         font-weight: 700;
@@ -93,13 +99,13 @@ html {
              display: block;
         }
         .color-link {
-                color: #516f6b;
+                color: $colorVerde;
                 font-weight: 700;
         }
     }
         button {
-            background-color: #516f6b;
-            color: #eae9e7;
+            background-color: $colorBlanco;
+            color: $colorBlanco;
             margin: 0px 10px 10px 0px;
             width: 40px;
             height: 30px;

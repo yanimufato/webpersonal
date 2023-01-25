@@ -27,23 +27,49 @@ a:link, a:visited, a:active {
 .container {
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 .container .encabezado {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   color: #ced17f;
+  margin: 0px;
 }
 
-.form-group {
-  font-size: 6rem;
-}
-
-.btn-primary {
+.btn {
   background-color: #ced17f;
   color: #eae9e7;
   font-weight: 700;
   border: none;
-  margin-top: -10px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #eae9e7;
+  color: #ced17f;
+}
+
+.swal-title {
+  font-family: "Roboto", sans-serif;
+  color: #ced17f;
+  font-weight: 700;
+}
+
+.swal-text {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.swal-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.swal-button {
+  background-color: #ced17f;
+  color: #eae9e7;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
@@ -54,54 +80,101 @@ a:link, a:visited, a:active {
     padding: 0px 70px 0px 0px;
   }
   .container .encabezado {
-    font-size: 2rem;
+    font-size: 2.5em;
   }
-  .container .form-horizontal {
+  .container .formulario {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 0px 0px 0px 0px;
+    height: 100%;
+    padding-top: 30px;
+  }
+  .container .nombreCasillero {
+    font-size: 1.2em;
+    margin: 10px 0px 0px 0px;
+  }
+  .container .casilleros {
+    border: 2px solid #ced17f;
+  }
+  .container .casilleros:hover {
+    border: 2px solid;
+  }
+  .container .msj {
+    height: 100px;
   }
   .container .ilus-ctc {
     width: 100%;
     margin: 0px 0px 20px 0px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) { /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) { /*tablet*/
   .container {
     display: flex;
     flex-direction: row-reverse;
-    margin: 148px 50px 160px 20px;
-    padding: 0px 80px;
+    margin: 140px 70px 130px 70px;
+    padding: 0px 70px;
   }
   .container .encabezado {
-    padding: 12px 15px 0px 0px;
-    font-size: 2rem;
+    font-size: 2.5em;
   }
-  .container .form-horizontal {
-    width: 500px;
-    margin-top: -10px;
-    padding: 0px 0px 0px 40px;
+  .container .formulario {
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+  }
+  .container .nombreCasillero {
+    font-size: 1.2em;
+    margin: 10px 0px 0px 0px;
+  }
+  .container .casilleros {
+    width: 100%;
+    border: 2px solid #ced17f;
+  }
+  .container .casilleros:hover {
+    border: 2px solid;
+  }
+  .container .msj {
+    height: 100px;
   }
   .container .ilus-ctc {
     width: 100%;
-    width: 100%;
-    padding-top: 10px;
+    margin: 10px 0px 20px 0px;
   }
 }
-@media screen and (min-width: 1200px) { /*laptop*/
+@media screen and (min-width: 1024px) { /*laptop*/
   .container {
+    display: flex;
     flex-direction: row-reverse;
-    padding: 300px 30px 0px 30px;
+    justify-content: center;
+    margin: 300px 100px 20px;
   }
   .container .encabezado {
-    font-size: 3rem;
+    font-size: 2.5em;
+    padding-top: 5px;
   }
-  .container .form-horizontal {
-    margin-top: -10px;
-    width: 600px;
-    padding: 0px 0px 0px 70px;
+  .container .formulario {
+    width: 300px;
+    height: 100%;
+    padding: 0px 40px;
+  }
+  .container .nombreCasillero {
+    font-size: 1.2em;
+    margin: 10px 0px 0px 0px;
+  }
+  .container .casilleros {
+    width: 250px;
+    border: 2px solid #ced17f;
+  }
+  .container .casilleros:hover {
+    border: 2px solid #eae9e7;
+  }
+  .container .msj {
+    height: 115px;
   }
   .container .ilus-ctc {
     width: 100%;
+    padding: 0px 20px 0px 0px;
+    margin: 10px 0px 20px 0px;
   }
 }
 * {
@@ -251,11 +324,25 @@ a:link, a:visited, a:active {
     line-height: 1.4em;
   }
   .galeria {
-    margin: 20px 20px 0px;
-    padding: 90px 0px 10px;
+    margin: 110px 20px 0px;
   }
   .galeria .ilus-secciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+  }
+  .galeria .ilus-secciones .tituloGrilla {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: #503748;
+    font-weight: 700;
+    font-size: 1.3em;
+    z-index: -1;
+  }
+  .galeria .ilus-secciones .img-fluid:hover {
+    opacity: 0.2;
   }
   .main-galeria {
     display: flex;
@@ -285,26 +372,39 @@ a:link, a:visited, a:active {
     font-size: 2.7rem;
   }
   .footer {
+    font-family: "Roboto", sans-serif;
     margin: 120px 0px 0px 0px;
-    padding: 25px 0px 0px 0px;
+    padding-top: 25px;
   }
   .footer .datosYaniFooter {
-    font-size: 1em;
-    padding: 0vh 0vw 0vh 10vw;
+    padding-left: 5vh;
   }
-  .footer .datosYaniFooter .salto-linea {
-    display: block;
+  .footer .datosYaniFooter .titFooter {
+    margin: 0px;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
-  .footer .logoIg {
+  .footer .datosYaniFooter .mailFooter {
+    margin-bottom: 5px;
+  }
+  .footer .datosYaniFooter .mailto {
+    color: #eae9e7;
+    font-size: 1.3em;
+  }
+  .footer .datosYaniFooter .iconosFooter {
+    display: flex;
+  }
+  .footer .datosYaniFooter .iconosFooter a {
+    color: #eae9e7;
+    padding-right: 10px;
+  }
+  .footer .datosYaniFooter .iconosFooter a .logoIg {
     width: 20px;
-    padding: 3px 3px 10px 0px;
   }
   .footer .datosPancitoFooter {
-    font-size: 1em;
-    padding: 0vh 0vw 3vh 10vw;
-  }
-  .footer .datosPancitoFooter .salto-linea {
-    display: block;
+    margin-top: 30px;
+    padding-left: 5vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) { /*tablet*/
@@ -325,7 +425,7 @@ a:link, a:visited, a:active {
     background-color: #503748;
   }
   .background .navbar-nav {
-    font-size: 1rem;
+    font-size: 1em;
     padding: 0px 10px;
   }
   .background .navbar-nav .nav-item {
@@ -333,10 +433,13 @@ a:link, a:visited, a:active {
   }
   .background .navbar-nav .nav-item .nav-link {
     width: 100%;
-    background-color: #503748;
-    color: #eae9e7;
+    color: #503748;
     padding: 5px 10px;
     letter-spacing: 0.1em;
+  }
+  .background .navbar-nav .nav-item .nav-link:hover {
+    background-color: #503748;
+    color: #eae9e7;
   }
   .background .main {
     margin-top: 130px;
@@ -350,17 +453,31 @@ a:link, a:visited, a:active {
     padding: 10px 0px 10px;
     font-size: 5rem;
     text-transform: uppercase;
-    color: #3a8571;
+    color: #516f6b;
     font-weight: 900;
     text-align: center;
   }
   .galeria {
-    margin: 140px 20px 130px;
-    padding: 0px 50px;
+    margin: 140px 70px 130px;
   }
   .galeria .ilus-secciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     padding: 15px 10px;
+  }
+  .galeria .ilus-secciones .tituloGrilla {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: #503748;
+    font-weight: 700;
+    font-size: 1.3em;
+    z-index: -1;
+  }
+  .galeria .ilus-secciones .img-fluid:hover {
+    opacity: 0.2;
   }
   .main-galeria {
     display: flex;
@@ -394,52 +511,66 @@ a:link, a:visited, a:active {
   }
   .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
     margin: 120px 0px 0px 0px;
-    padding: 15px 0px 0px 0px;
+    padding: 25px 0px 15px;
   }
   .footer .datosYaniFooter {
-    font-size: 1em;
+    padding-left: 10vh;
   }
-  .footer .datosYaniFooter .salto-linea {
-    display: block;
+  .footer .datosYaniFooter .titFooter {
+    margin: 0px;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
-  .footer .logoIg {
+  .footer .datosYaniFooter .mailFooter {
+    margin-bottom: 5px;
+  }
+  .footer .datosYaniFooter .mailto {
+    color: #eae9e7;
+    font-size: 1.3em;
+  }
+  .footer .datosYaniFooter .iconosFooter {
+    display: flex;
+  }
+  .footer .datosYaniFooter .iconosFooter a {
+    color: #eae9e7;
+    padding-right: 10px;
+  }
+  .footer .datosYaniFooter .iconosFooter a .logoIg {
     width: 20px;
-    padding: 10px 3px 10px 0px;
   }
   .footer .datosPancitoFooter {
-    font-size: 1em;
-  }
-  .footer .datosPancitoFooter .salto-linea {
-    display: block;
+    padding-right: 10vh;
   }
 }
 @media screen and (min-width: 1024px) { /*laptop*/
-  .background {
-    font-size: 1rem;
-  }
   .background .navbar {
     position: fixed;
     z-index: 100;
   }
   .background .navbar-brand {
-    width: 250px;
-    margin: 0px 75px 0px 120px;
+    width: 150px;
+    margin: 0px 0px 0px 15vh;
   }
   .background .navbar-nav {
-    font-size: 1.3rem;
-    margin: 60px;
+    font-size: 1.3em;
+    margin: 5vh 0px 0px 35vh;
   }
   .background .navbar-nav .nav-item {
     padding: 0px 10px 0px 80px;
   }
   .background .navbar-nav .nav-item .nav-link {
     width: 100%;
-    background-color: #503748;
-    color: #eae9e7;
+    color: #503748;
     padding: 5px 10px;
     letter-spacing: 0.1em;
+  }
+  .background .navbar-nav .nav-item .nav-link:hover {
+    background-color: #503748;
+    color: #eae9e7;
   }
   .titular {
     padding: 250px 0px 10px;
@@ -465,7 +596,23 @@ a:link, a:visited, a:active {
     margin: 300px 180px 20px;
   }
   .galeria .ilus-secciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
     margin-bottom: 80px;
+  }
+  .galeria .ilus-secciones .tituloGrilla {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: #503748;
+    font-weight: 700;
+    font-size: 1.5em;
+    z-index: -1;
+  }
+  .galeria .ilus-secciones .img-fluid:hover {
+    opacity: 0.2;
   }
   .main-galeria {
     display: flex;
@@ -505,22 +652,43 @@ a:link, a:visited, a:active {
   }
   .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
     margin: 120px 0px 0px 0px;
-    padding: 15px 0px 0px 0px;
+    padding: 25px 0px 35px;
   }
   .footer .datosYaniFooter {
-    font-size: 1em;
+    padding-left: 30vh;
   }
-  .footer .datosYaniFooter .salto-linea {
-    display: block;
+  .footer .datosYaniFooter .titFooter {
+    margin: 0px;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
-  .footer .logoIg {
+  .footer .datosYaniFooter .mailFooter {
+    margin-bottom: 5px;
+  }
+  .footer .datosYaniFooter .mailto {
+    color: #eae9e7;
+    font-size: 1.3em;
+  }
+  .footer .datosYaniFooter .iconosFooter {
+    display: flex;
+  }
+  .footer .datosYaniFooter .iconosFooter a {
+    color: #eae9e7;
+    padding-right: 10px;
+  }
+  .footer .datosYaniFooter .iconosFooter a .logoIg {
     width: 20px;
-    padding: 10px 3px 10px 0px;
   }
   .footer .datosPancitoFooter {
-    font-size: 1em;
+    text-align: right;
+    padding-right: 30vh;
+  }
+  .footer .datosPancitoFooter .yaniCopy {
+    margin-bottom: 10px;
   }
   .footer .datosPancitoFooter .salto-linea {
     display: block;
@@ -536,6 +704,7 @@ html {
   overflow-x: hidden;
 }
 .background .navbar { /*navbar*/
+  font-family: "Roboto", sans-serif;
   width: 100%;
   background-color: #eae9e7;
 }
@@ -543,7 +712,7 @@ html {
   text-transform: uppercase;
 }
 .background .navbar .navbar-nav .nav-link {
-  font-weight: 700;
+  font-weight: 900;
 }
 .background .main .titular { /*cuerpo*/
   display: flex;
@@ -570,12 +739,9 @@ html {
   background-color: #503748;
   color: #eae9e7;
 }
-.background .footer .color-link-foo {
+.background .footer a {
   color: #eae9e7;
   font-weight: 700;
-}
-.background .footer .salto-linea {
-  display: block;
 }
 
 /*seccion trabajos y comics*/
@@ -609,7 +775,7 @@ html {
   font-weight: 700;
 }
 .datos-galeria button {
-  background-color: #516f6b;
+  background-color: #eae9e7;
   color: #eae9e7;
   margin: 0px 10px 10px 0px;
   width: 40px;

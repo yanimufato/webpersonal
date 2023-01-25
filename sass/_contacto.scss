@@ -14,22 +14,49 @@ a:link, a:visited, a:active {
 .container {
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
         .encabezado {
         text-transform: uppercase;
-        font-weight: 700;
-        color: #ced17f;
+        font-weight: 900;
+        color: $colorAmarillo;
+        margin: 0px;
         }
 }
-.form-group {
-    font-size: 6rem;
-}
-.btn-primary {
-    background-color: #ced17f;
-    color: #eae9e7;
+
+.btn {
+    background-color: $colorAmarillo;
+    color: $colorBlanco;
     font-weight: 700;
     border: none;
-    margin-top: -10px;
+    margin-top: 10px;
 }
+.btn:hover {
+    background-color: $colorBlanco;
+    color: $colorAmarillo;
+}
+.swal-title {
+    font-family: 'Roboto', sans-serif ;
+    color: $colorAmarillo;
+    font-weight: 700;
+    
+}
+.swal-text {
+    width: 100%;
+    font-family: 'Roboto', sans-serif ;
+    text-align: center;
+  }
+  .swal-button-container {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.swal-button {
+    background-color: $colorAmarillo;
+    color: $colorBlanco;
+    font-weight: 700;        
+}
+
 @media screen and (max-width: 767px) {
     .container{
         display: flex;
@@ -37,11 +64,27 @@ a:link, a:visited, a:active {
         margin: 120px 30px 0px 30px;
         padding: 0px 70px 0px 0px;
         .encabezado {
-            font-size: 2rem;   
+            font-size: 2.5em;   
         }
-        .form-horizontal {
+        .formulario {
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            padding: 0px 0px 0px 0px;
+            height: 100%;
+            padding-top: 30px;
+        }
+        .nombreCasillero {
+            font-size: 1.2em;
+            margin: 10px 0px 0px 0px;
+        }
+        .casilleros {
+            border: 2px solid $colorAmarillo;
+        }
+        .casilleros:hover {
+            border: 2px solid ;
+        }
+        .msj {
+            height: 100px;
         }
         .ilus-ctc {
             width: 100%;
@@ -50,43 +93,75 @@ a:link, a:visited, a:active {
     }
 
 }
-@media screen and (min-width: 768px) and (max-width: 1199px ) { /*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px ) { /*tablet*/
     .container {
         display: flex;
         flex-direction: row-reverse;
-        margin: 148px 50px 160px 20px;
-        padding: 0px 80px;
-        .encabezado {   
-            padding: 12px 15px 0px 0px;
-            font-size: 2rem;
+        margin: 140px 70px 130px 70px;
+        padding: 0px 70px;
+        .encabezado {
+            font-size: 2.5em;   
         }
-        .form-horizontal {
-            width: 500px;
-            margin-top: -10px;
-            padding: 0px 0px 0px 40px;
+        .formulario {
+            width: 100%;
+            height: 100%;
+            padding: 0px 20px;
+        }
+        .nombreCasillero {
+            font-size: 1.2em;
+            margin: 10px 0px 0px 0px;
+        }
+        .casilleros {
+            width: 100%;
+            border: 2px solid $colorAmarillo;
+        }
+        .casilleros:hover {
+            border: 2px solid ;
+        }
+        .msj {
+            height: 100px;
         }
         .ilus-ctc {
-            width: 100%;        
             width: 100%;
-            padding-top: 10px;        
+            margin: 10px 0px 20px 0px;        
         }
     }
 
 } 
-@media screen and (min-width: 1200px) { /*laptop*/
+@media screen and (min-width: 1024px) { /*laptop*/
     .container {
+        display: flex;
         flex-direction: row-reverse;
-        padding: 300px 30px 0px 30px;
-        .encabezado {   
-            font-size: 3rem;
+        justify-content: center;
+        margin: 300px 100px 20px;
+        
+        .encabezado {
+            font-size: 2.5em;   
+            padding-top: 5px;
         }
-        .form-horizontal {
-            margin-top: -10px;
-            width: 600px;
-            padding: 0px 0px 0px 70px;
+        .formulario {
+            width: 300px;
+            height: 100%;
+            padding: 0px 40px;
+        }
+        .nombreCasillero {
+            font-size: 1.2em;
+            margin: 10px 0px 0px 0px;
+        }
+        .casilleros {
+            width: 250px;
+            border: 2px solid $colorAmarillo;
+        }
+        .casilleros:hover {
+            border: 2px solid $colorBlanco;
+        }
+        .msj {
+            height: 115px;
         }
         .ilus-ctc {
-            width: 100%;        
+            width: 100%;
+            padding: 0px 20px 0px 0px;
+            margin: 10px 0px 20px 0px;        
         }
     }
 }

@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -51,18 +52,21 @@
       </nav>
     </header>
 
-    <form class="container" action="https://api.web3forms.com/submit" method="POST">
+  <div class="container"> 
 
-      <input type="hidden" name="access_key" value="1a154ae0-31c8-4ed6-b62c-9e7bc0fef92b">
-  
-      <input type="text" name="name" required>
-      <input type="email" name="email" required>
-      <textarea name="message" required></textarea>
-      <input type="hidden" name="redirect" value="https://yanimufato.com/secciones/contact.html">
-  
-      <button type="submit">Submit Form</button>
-  
-  </form>
+      <form id="form" class="formulario" action="https://api.web3forms.com/submit" method="POST">
+        <p class="encabezado">Hola, escribime</p>
+        <input type="hidden" name="access_key" value="1a154ae0-31c8-4ed6-b62c-9e7bc0fef92b">
+        <p class="nombreCasillero">Nombre</p>
+        <input class="casilleros" type="text" name="name" required>
+        <p class="nombreCasillero">Email</p>
+        <input class="casilleros" type="email" name="email" required>
+        <p class="nombreCasillero">Mensaje</p>
+        <textarea class="casilleros msj" name="message" required></textarea>
+        
+        <input type="hidden" name="redirect" value="https://yanimufato.com/secciones/contact.html">
+        <button class="btn" type="submit">Enviar</button>
+      </form>
       <div>
         <img class="ilus-ctc" src="../img/contact.png" alt="Contacto">
       </div>
@@ -75,30 +79,18 @@
         <p class="datosPancitoFooter"></span> Diseñado por <span class="salto-linea"><a class="color-link-foo" href="https://www.pancito.com.ar" target="blank">Pancito Studio</a></p>
     </div>
     
-  </footer> 
- 
-    <!--formulario-->
-<script>
-  const $form = document.querySelector("#form")
+  </footer>
 
-  $form.addEventListener("submit", handleSubmit)
-
-  async function handleSubmit(event) {
-    event.preventDefault()
-    const form = new FormData(this)
-    const response =  await fetch(this.action, {
-      method: this.method,
-      body: form,
-      headers: {
-        "Accept": "aplication/json"
-      }
+  <script>
+    const mensaje =document.querySelector(".btn")
+    mensaje.addEventListener("click", ()=> {
+      swal({
+        title: ":)",
+        text: "Gracias por escribir",
+      });
     })
-    if (response.ok) {
-      this.reset()
-      alert("Gracias por escribir")
-    }
-  }
-</script>
+  </script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

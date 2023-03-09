@@ -1,5 +1,5 @@
-@media screen and (max-width: 767px){ /*movil*/
-    .navbar {
+@media screen and (min-width: 1024px){ /*movil*/
+    /*.navbar {
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
@@ -23,6 +23,23 @@
         }
         .navbar-link {
             padding: 0px;
+        }
+    }*/
+    .mainHeader  {
+        padding: 0 100px;
+        .logo {
+            font-size: 1.7em;
+        }
+        ul li {
+            font-size: 1.3em;
+        }
+    } 
+    .hamburger {
+        display: none;
+    }
+    .mainHeader {
+        .navbar-desktop {
+            max-width: 1100px;
         }
     }
     .main .titular h1 {
@@ -124,9 +141,10 @@
         }
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px ) { /*tablet*/
+@media screen and (min-width: 768px ) and (max-width: 1023px) { /*tablet*/
     .background {
         font-size: 1rem;
+        /*
         .navbar {
             padding-top: 20px;
             padding: 0px 40px;
@@ -156,6 +174,18 @@
                     }
                 }
             }
+        }*/
+        .mainHeader  {
+            padding: 0 50px;
+            .logo {
+                font-size: 1.6em;
+            }
+            ul li {
+                font-size: 1em;
+            }
+        } 
+        .hamburger {
+            display: none;
         }
         .main {    
             margin-top: 130px;     
@@ -265,64 +295,56 @@
         }
     }
 }
-
-@media screen and (min-width: 1024px) { /*laptop*/
-    .background {        
-        .navbar { 
-            position: fixed;
-            z-index: 100;
-        }
-        .navbar-brand{
-            width: 150px;
-            margin: 0px 0px 0px 15vh;
-        }       
-        .navbar-nav {
-            font-size: 1.3em;
-            margin: 5vh 0px 0px 35vh;
-            .nav-item {                
-                padding: 0px 10px 0px 80px;
-                .nav-link {
-                    width: 100%;
-                    color: #503748;
-                    padding: 5px 10px;
-                    letter-spacing: 0.1em;
-                    &:hover {
-                        background-color: $colorVioleta;
-                        color: $colorBlanco;
-                    }
-                }
+//movil
+@media screen and (max-width:767px) { 
+    .mainHeader  {
+        padding: 0 50px;
+        .logo {
+            img {
+                width: 120px;
             }
-        }    
-    }
-    .titular  {
-        padding: 250px 0px 10px;
-        h1 {
-            font-size: 5.2rem;
-            padding: 30px;
-            letter-spacing: 0.2rem;
-            word-spacing: 1rem;
-            margin-bottom: 20px;
         }
-    }
-    .titular-2 h2 {
-        padding: 30px 0px 10px;
-        font-size: 5.5rem;
-        text-transform: uppercase;
-        color: #3a8571;
-        font-weight: 900;
-        letter-spacing: 0.2rem;
-        word-spacing: 1rem;
-        text-align: center;
-    }
-
+        .navbar-desktop {
+            display: none;
+        }
+    } 
+    .main { 
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;  
+        margin: 0 auto;        
+        .titular  {                                 
+            padding-top: 150px;
+            h1 {
+                width: 100%; 
+                font-size: 4.6em;
+                margin-bottom: 40px;
+            }
+        }
+        .ilustracion {
+            max-width: 300px;
+            margin: 0px auto;  
+            img {
+                width: 100%;
+            }
+        }
+        .titular-2 h2 {
+            width: 100%; 
+            padding: 40px 0 70px;
+            font-size: 4.6em;
+            margin-bottom: 30px;
+        }
+    }    
     .galeria {
-        margin: 300px 180px 20px;
+        max-width: 350px;
+        margin: 0 auto;
+        padding-top: 150px;
         .ilus-secciones {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 350px;
-            margin-bottom: 80px;
+            padding-bottom: 15px;
             .tituloGrilla {
                 position: absolute;
                 text-transform: uppercase;
@@ -332,7 +354,11 @@
                 font-size: 1.5em;                
                 z-index: -1;                
             }
-            .img-fluid:hover {
+            .img-galeria {
+                max-width: 100%;
+                height: auto;
+            }
+            .img-galeria:hover {
                 opacity: 0.20;                
             }
 
@@ -375,45 +401,58 @@
         } 
     }
     .footer {
-        display: flex;
-        justify-content: space-between;
-        font-family: 'Roboto', sans-serif;
-        margin: 120px 0px 0px 0px;
-        padding: 25px 0px 35px;
-        .datosYaniFooter {
-            padding-left: 30vh;
-            .titFooter {
-                margin: 0px;
-                font-size: 1.3em;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
-            .mailFooter {
-                margin-bottom: 5px;
-            }
-            .mailto {
-                color: $colorBlanco;
-                font-size: 1.3em;
-            }
-            .iconosFooter {
-                display: flex;
-                a {
-                    color: $colorBlanco;
-                    padding-right: 10px;
-                    .logoIg {
-                        width: 20px;    
+        height: 250px;
+        .datosFooter {
+            max-width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px auto;
+            padding: 30px 0px 15px;
+            .datosYaniFooter {                
+                .titFooter {
+                    margin: 0px;
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .mailFooter {
+                    font-size: 1.3em;
+                    margin-bottom: 5px;
+                    a {
+                        padding-left: 10px;
                     }
                 }
-            }            
-        }
-        .datosPancitoFooter {
-            text-align: right;
-            padding-right: 30vh;
-            .yaniCopy {
-                margin-bottom: 10px;
+                .mailto {
+                    color: $colorBlanco;
+                    font-size: 1.3em;
+                }
+                .iconosFooter {
+                    display: flex;
+                    justify-content: center;
+                    width: 80px;
+                    padding-top: 10px;
+                    a {
+                        color: $colorBlanco;
+                        padding-right: 15px;
+                        .logoIg {
+                            width: 25px;    
+                        }
+                    }
+                }            
             }
-            .salto-linea{
-                display: block;
+            .datosPancitoFooter {                
+                padding-top: 15px;
+                .yaniCopy {
+                    margin-bottom: 10px;
+                }
+                .salto-linea{
+                    display: block;
+                }
+                .linkPancito {
+                    padding-top: 35px;
+                }
             }
         }
     }

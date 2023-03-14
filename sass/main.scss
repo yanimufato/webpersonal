@@ -205,17 +205,22 @@ body {
                 font-weight: 700;
         }
     }
-        button {
-            background-color: $colorBlanco;
-            color: $colorBlanco;
-            margin: 0px 10px 10px 0px;
-            width: 40px;
-            height: 30px;
-            border: none;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
+    button {
+        background-color: $colorVerde;
+        color: $colorBlanco;
+        width: 40px;
+        height: 30px;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .botonComics{
+        background-color: $colorCeleste;
+    }
     
+} 
+.subir {
+    background-color: $colorCeleste;
 }
 
 

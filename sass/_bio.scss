@@ -13,19 +13,12 @@ a:link, a:visited, a:active {
 
 
 .main-bio {
-
-    .ilus-galeria {
-        width: 100%;
-        padding: 8px 40px;       
-    }
-    .datos-bio {
-        margin: 0px;
-        padding: 8px 40px;
+   
+    .textoBio {
         .titu-bio {
-            color: #e4c7b8;
+            color: $colorAmarillo;
             font-weight: 700;
-            padding: 0px 0px 20px;
-            
+            padding: 0px 0px 20px;            
         }
         p {
             width: 100%;                
@@ -43,14 +36,39 @@ a:link, a:visited, a:active {
         
     }
 }
-@media screen and (max-width: 767px) {
-    .main-bio{        
-        margin: 110px 0px 35px;
+@media screen and (min-width: 1024px) { /*laptop*/
+    .main-bio {
         display: flex;
-        flex-direction: column-reverse;
+        justify-content: center;    
+        margin: 290px 230px 0px 230px;
+        padding: 0px;
+        .imagenBio {
+            width: 100%;
+            margin: 0px;
+            .ilus-galeria {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+        .textoBio {
+            //width: 100%;
+            position: sticky;
+            top: 1000px;
+            padding: 0px 20px;
+  
+            p {
+                padding: 0px 80px 0px 0px;
+                width: 100%;
+                font-size: 1.5rem;
+                word-spacing: normal;
+                line-height: 2.8rem;
+                letter-spacing: normal;
+            }
+        } 
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px ) { /*tablet*/
+
+@media screen and (min-width: 768px ) and (max-width: 1023px) { /*tablet*/
     .main-bio {
         display: flex;
         justify-content: center;
@@ -75,42 +93,27 @@ a:link, a:visited, a:active {
             }
         }    
     }    
-
-
 }
-@media screen and (min-width: 1200px) { /*laptop*/
-    .main-bio {
+
+@media screen and (max-width: 767px) {
+    .main-bio{ 
         display: flex;
-        justify-content: center;    
-        margin: 290px 230px 0px 230px;
-        padding: 0px;
-        .cuerpo-bio {
+        flex-direction: column-reverse;
+        max-width: 300px;       
+        margin: 0 auto; 
+        padding: 150px 0 100px;     
+        .ilus-galeria {
             width: 100%;
-            margin: 0px;
-            .ilus-galeria {
-                width: 100%;
-                padding-bottom: 20px;
-            }
         }
-        .datos-bio {
-            width: 100%;
-            position: sticky;
-            top: 1000px;
-            padding: 0px 20px;
-  
+        .textoBio {
+            padding-bottom: 30px;
             p {
-                padding: 0px 80px 0px 0px;
-                width: 100%;
-                font-size: 1.5rem;
-                word-spacing: normal;
-                line-height: 2.8rem;
-                letter-spacing: normal;
+                font-size: 1.4em;
+                line-height: 1.7em;
             }
-        } 
+            
+        }
     }
-
-
-
 }
 
 

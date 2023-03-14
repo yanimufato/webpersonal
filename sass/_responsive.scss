@@ -1,4 +1,5 @@
-@media screen and (min-width: 1024px){ /*movil*/
+//laptop
+@media screen and (min-width: 1024px){ 
     /*.navbar {
         display: flex;
         justify-content: space-around;
@@ -141,7 +142,8 @@
         }
     }
 }
-@media screen and (min-width: 768px ) and (max-width: 1023px) { /*tablet*/
+//tablet
+@media screen and (min-width: 768px ) and (max-width: 1023px) { 
     .background {
         font-size: 1rem;
         /*
@@ -336,15 +338,15 @@
         }
     }    
     .galeria {
-        max-width: 350px;
+        max-width: 300px;
         margin: 0 auto;
-        padding-top: 150px;
+        padding: 150px 0 100px;
         .ilus-secciones {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 350px;
-            padding-bottom: 15px;
+            width: 300px;
+            padding-bottom: 20px;
             .tituloGrilla {
                 position: absolute;
                 text-transform: uppercase;
@@ -366,23 +368,24 @@
     }
     .main-galeria {
         display: flex;
-        justify-content: center;    
-        margin: 300px 230px 0px 230px;
-        padding: 0px;
+        flex-direction: column-reverse;  
+        max-width: 300px;  
+        margin: 0 auto;
+        padding: 150px 0 100px 0;
         .cuerpo {
-            width: 100%;
-            margin: 0px 20px 0px 20px;
+            width: 100%;            
             .ilus-galeria {
                 width: 100%;
                 padding-bottom: 20px;
             }
+            .video {
+                aspect-ratio: 16/9;
+            }
         }
         .datos-galeria {
             width: 100%;
-            padding: 0px 20px;
-            margin-left: 15px;  
+            padding-bottom: 100px;              
             p {
-                padding: 0px 80px 0px 0px;
                 width: 100%;
                 font-size: 1.5rem;
                 word-spacing: normal;
@@ -396,9 +399,27 @@
                 font-size: 4rem;
             }
             .boton {
-                margin-top: 100px;
+                
+                margin-top: 20px;
             }
-        } 
+        }
+    }
+    .subir {
+        position: relative;
+        left: 300px;
+        bottom: 50px;
+            .btn {
+                background-color: $colorVerde;
+                color: $colorBlanco;
+                width: 40px;
+                height: 30px;
+                border: none;
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+            .botonComics {
+                background-color: $colorCeleste;
+            } 
     }
     .footer {
         height: 250px;

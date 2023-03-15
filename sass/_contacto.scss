@@ -60,72 +60,85 @@ a:link, a:visited, a:active {
 @media screen and (min-width: 1024px) { 
     .container {
         display: flex;
-        flex-direction: row-reverse;
         justify-content: center;
-        margin: 300px 100px 20px;
-        
-        .encabezado {
-            font-size: 2.5em;   
-            padding-top: 5px;
-        }
+        flex-direction: row-reverse;
+        max-width: 1000px;        
+        margin: 0 auto;
+        padding: 250px 0 150px 0; 
         .formulario {
-            width: 300px;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
             height: 100%;
-            padding: 0px 40px;
+            padding-left: 20px;
+            .encabezado {
+                font-size: 3.5em;   
+            }
+            .nombreCasillero {
+                font-size: 1.2em;
+                margin: 15px 0px 5px 0px;
+            }
+            .casilleros {
+                border: 2px solid $colorAmarillo;
+            }
+            .casilleros:hover {
+                border: 2px solid ;
+            }
+            .msj {
+                height: 90px;
+            }
+            .btn {
+                height: 30px;
+                margin-top: 15px;
+                font-size: 1.4em;
+            }
         }
-        .nombreCasillero {
-            font-size: 1.2em;
-            margin: 10px 0px 0px 0px;
-        }
-        .casilleros {
-            width: 250px;
-            border: 2px solid $colorAmarillo;
-        }
-        .casilleros:hover {
-            border: 2px solid $colorBlanco;
-        }
-        .msj {
-            height: 115px;
-        }
-        .ilus-ctc {
-            width: 100%;
-            padding: 0px 20px 0px 0px;
-            margin: 10px 0px 20px 0px;        
+        .ilus-ctc img {
+            width: 100%; 
+            padding: 5px 20px 0 0;     
         }
     }
 }
 //tablet
 @media screen and (min-width: 768px) and (max-width: 1023px ) { 
-    .container {
+    .container{
         display: flex;
+        justify-content: center;
         flex-direction: row-reverse;
-        margin: 140px 70px 130px 70px;
-        padding: 0px 70px;
-        .encabezado {
-            font-size: 2.5em;   
-        }
+        max-width: 600px;        
+        margin: 0 auto;
+        padding: 150px 0 100px 0; 
         .formulario {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             height: 100%;
-            padding: 0px 20px;
+            padding-left: 15px;
+            .encabezado {
+                font-size: 2.5em;   
+            }
+            .nombreCasillero {
+                font-size: 1.2em;
+                margin: 15px 0px 5px 0px;
+            }
+            .casilleros {
+                border: 2px solid $colorAmarillo;
+            }
+            .casilleros:hover {
+                border: 2px solid ;
+            }
+            .msj {
+                height: 100px;
+            }
+            .btn {
+                height: 30px;
+                margin-top: 15px;
+                font-size: 1.4em;
+            }
         }
-        .nombreCasillero {
-            font-size: 1.2em;
-            margin: 10px 0px 0px 0px;
-        }
-        .casilleros {
-            width: 100%;
-            border: 2px solid $colorAmarillo;
-        }
-        .casilleros:hover {
-            border: 2px solid ;
-        }
-        .msj {
-            height: 100px;
-        }
-        .ilus-ctc {
-            width: 100%;
-            margin: 10px 0px 20px 0px;        
+        .ilus-ctc img {
+            width: 100%; 
+            padding-right: 15px;     
         }
     }
 
@@ -170,5 +183,4 @@ a:link, a:visited, a:active {
             width: 100%;      
         }
     }
-
 }

@@ -1,302 +1,362 @@
 //laptop
 @media screen and (min-width: 1024px){ 
-    /*.navbar {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 20px;
-        font-size: 0.5rem;
-        position: fixed;
-        z-index: 100;
-        .navbar-brand {
-            width: 90px;
-            margin-left: -10px;            
-        }
-        .navbar-toggler {
-            background-color: $colorVioleta;
-            margin-top: 10px;
-        }
-        .navbar-nav {
-            font-size: 1rem;
-            .nav-link {
-                color: $colorVioleta;
-                padding: 5px 40px;
-            }
-        }
-        .navbar-link {
-            padding: 0px;
-        }
-    }*/
-    .mainHeader  {
-        padding: 0 100px;
+    .mainHeader {
+        height: 180px;
+        padding: 0 80px;
         .logo {
-            font-size: 1.7em;
-        }
-        ul li {
-            font-size: 1.3em;
+            img {
+                width: 150px;
+            }
         }
     } 
     .hamburger {
         display: none;
     }
-    .mainHeader {
-        .navbar-desktop {
-            max-width: 1100px;
-        }
-    }
-    .main .titular h1 {
-        margin: 20vh 0px 0vh;
-        padding-bottom: 1vh;
-        font-size: 3rem;
-        line-height: 1.4em;
+    .main { 
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;  
+        margin: 0 auto; 
+        padding: 250px 0 150px 0;      
+        .titular  {                                 
+            h1 {
+                width: 100%; 
+                font-size: 5.8em;
+                margin-bottom: 40px;
+            }
         }
         .ilustracion {
-        padding: 5vh 10vw 0px;
+            max-width: 1000px;
+            margin: 0px auto;  
+            img {
+                width: 100%;
+            }
         }
         .titular-2 h2 {
-            padding: 5vh 0px 1vh;
-            margin: 0px;
-            font-size: 3rem;
-            line-height: 1.4em;
+            width: 100%; 
+            padding: 40px 0 70px;
+            font-size: 6em;
+            
         }
+    }    
     .galeria {
-        margin: 110px 20px 0px;
-        .ilus-secciones {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            .tituloGrilla {
-                position: absolute;
-                text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;
-                color: $colorVioleta;
-                font-weight: 700;
-                font-size: 1.3em;
-                z-index: -1;                
-            }
-            .img-fluid:hover {
-                opacity: 0.20;                
-            }
-        }
-    }
-    .main-galeria {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 20px;
-        padding: 90px 0px 5px;
-        .ilus-galeria {
-            width: 100%;
-            padding: 8px 35px;
-        }
-        .datos-galeria {
-            margin: 0px;
-            padding: 8px 35px;
-            p {
-                width: 100%;                
-                font-size: 1rem;
-                word-spacing: normal;
-                line-height: 1.8rem;
-                letter-spacing: normal;
-            }
-            .titu-trabajos {
-                font-size: 2.7rem;
-            }
-            .titu-comics {
-                font-size: 2.7rem;
-            }
-        }
-    }
-    .footer {
-        font-family: 'Roboto', sans-serif;
-        margin: 120px 0px 0px 0px;
-        padding-top: 25px;
-        .datosYaniFooter {
-            padding-left: 5vh;
-            .titFooter {
-                margin: 0px;
-                font-size: 1.3em;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
-            .mailFooter {
-                margin-bottom: 5px;
-            }
-            .mailto {
-                color: $colorBlanco;
-                font-size: 1.3em;
-            }
-            .iconosFooter {
-                display: flex;
-                a {
-                    color: $colorBlanco;
-                    padding-right: 10px;
-                    .logoIg {
-                        width: 20px;    
-                    }
-                }
-            }            
-        }
-        .datosPancitoFooter {
-            margin-top: 30px;
-            padding-left: 5vh;
-        }
-    }
-}
-//tablet
-@media screen and (min-width: 768px ) and (max-width: 1023px) { 
-    .background {
-        font-size: 1rem;
-        /*
-        .navbar {
-            padding-top: 20px;
-            padding: 0px 40px;
-            position: fixed;
-            z-index: 100;
-        }
-        .navbar-brand {
-            width: 200px;
-            margin-left: 20px;            
-        }
-        .navbar-toggler {
-            background-color: $colorVioleta;
-        }
-        .navbar-nav {
-            font-size: 1em;
-            padding: 0px 10px;
-            .nav-item {
-                padding: 0px 10px;
-                .nav-link {
-                    width: 100%;
-                    color: $colorVioleta;
-                    padding: 5px 10px;
-                    letter-spacing: 0.1em;
-                    &:hover {
-                        background-color: $colorVioleta;
-                        color: $colorBlanco;
-                    }
-                }
-            }
-        }*/
-        .mainHeader  {
-            padding: 0 50px;
-            .logo {
-                font-size: 1.6em;
-            }
-            ul li {
-                font-size: 1em;
-            }
-        } 
-        .hamburger {
-            display: none;
-        }
-        .main {    
-            margin-top: 130px;     
-            padding: 10px 80px 0px;
-        }
-        .titular h1 {
-            font-size: 5rem;
-            padding: 10px 0px 20px;
-        }
-        .titular-2 h2 {
-            padding: 10px 0px 10px;
-            font-size: 5rem;
-            text-transform: uppercase;
-            color: $colorVerde;
-            font-weight: 900;
-            text-align: center;
-        }
-    }
-    .galeria {
-        margin: 140px 70px 130px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 250px 0 150px;
         .ilus-secciones {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 300px;
-            padding: 15px 10px;
+            padding: 0 10px 20px 10px;
             .tituloGrilla {
                 position: absolute;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
                 color: $colorVioleta;
                 font-weight: 700;
-                font-size: 1.3em;
+                font-size: 1.5em;                
                 z-index: -1;                
             }
-            .img-fluid:hover {
+            .img-galeria {
+                max-width: 100%;
+                height: auto;
+            }
+            .img-galeria:hover {
                 opacity: 0.20;                
             }
-        }
+
+        } 
     }
     .main-galeria {
         display: flex;
-        justify-content: center;
-        margin: 150px 70px 0px 70px;
+        justify-content: center;  
+        max-width: 1000px;  
+        margin: 0 auto;
+        padding: 250px 0 150px 0;
         .cuerpo {
             width: 100%;
-            padding: 0px 15px 0px 15px;
-        }
-        .ilus-galeria {
-            width: 100%;
-            padding: 5px;
-
+            padding: 10px 20px 0 0;            
+            .ilus-galeria {
+                width: 100%;
+                padding-bottom: 20px;
+            }
         }
         .datos-galeria {
-            width: 600px;
-            padding: 0px 0px 0px 15px;
+            width: 100%;
+            padding: 0 0 100px 20px;              
             p {
                 width: 100%;
-
-                font-size: 1rem;
+                font-size: 1.5rem;
                 word-spacing: normal;
-                line-height: 1.8rem;
+                line-height: 2.8rem;
                 letter-spacing: normal;
             }
             .titu-trabajos {
-                font-size: 2.7rem;
+                font-size: 3.5rem;
             }
             .titu-comics {
-                font-size: 2.7rem;
+                font-size: 3.5rem;
+            }
+            .boton {                
+                margin-top: 20px;
             }
         }
     }
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        font-family: 'Roboto', sans-serif;
-        margin: 120px 0px 0px 0px;
-        padding: 25px 0px 15px;
-        .datosYaniFooter {
-            padding-left: 10vh;
-            .titFooter {
-                margin: 0px;
-                font-size: 1.3em;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
-            .mailFooter {
-                margin-bottom: 5px;
-            }
-            .mailto {
+    .subir {
+        position: relative;
+        left: 780px;
+        bottom: 50px;
+            .btn {
+                background-color: $colorVerde;
                 color: $colorBlanco;
-                font-size: 1.3em;
+                width: 40px;
+                height: 30px;
+                border: none;
+                font-size: 1.5rem;
+                font-weight: 900;
             }
-            .iconosFooter {
-                display: flex;
-                a {
-                    color: $colorBlanco;
-                    padding-right: 10px;
-                    .logoIg {
-                        width: 20px;    
+            .botonComics {
+                background-color: $colorCeleste;
+            } 
+    }
+    .footer {
+        height: 150px;
+        .datosFooter {
+            max-width: 1000px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px auto;
+            padding: 30px 0px 15px;
+            .datosYaniFooter {                
+                .titFooter {
+                    margin: 0px;
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                .mailFooter {
+                    font-size: 1.3em;
+                    margin-bottom: 5px;
+                    a {
+                        padding-left: 10px;
                     }
                 }
-            }            
-        }
-        .datosPancitoFooter {
-            padding-right: 10vh;
+                .mailto {
+                    color: $colorBlanco;
+                    font-size: 1.3em;
+                }
+                .iconosFooter {
+                    display: flex;
+                    justify-content: center;
+                    width: 80px;
+                    padding-top: 25px;
+                    a {
+                        color: $colorBlanco;
+                        padding-right: 15px;
+                        .logoIg {
+                            width: 25px;    
+                        }
+                    }
+                }            
+            }
+            .datosPancitoFooter {                
+                .yaniCopy {
+                    margin-bottom: 10px;
+                    line-height: 2em;
+                }
+                .salto-linea{
+                    display: block;
+                }
+                .linkPancito {
+                    padding-top: 35px;
+                }
+            }
         }
     }
 }
+
+//tablet
+@media screen and (min-width: 768px ) and (max-width: 1023px) { 
+    .mainHeader  {
+        padding: 0 50px;
+        .logo {
+            img {
+                width: 100px;
+            }
+        }
+        .navbar-desktop {
+            display: none;
+        }
+    } 
+    .main { 
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;  
+        margin: 0 auto;        
+        .titular  {                                 
+            padding-top: 150px;
+            h1 {
+                width: 100%; 
+                font-size: 5.5em;
+                margin-bottom: 40px;
+            }
+        }
+        .ilustracion {
+            max-width: 600px;
+            margin: 0px auto;  
+            img {
+                width: 100%;
+            }
+        }
+        .titular-2 h2 {
+            width: 100%; 
+            padding: 40px 0 70px;
+            font-size: 5.5em;
+            margin-bottom: 30px;
+        }
+    }    
+    .galeria {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 150px 0 100px;
+        .ilus-secciones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            padding: 0 10px 20px 10px;
+            .tituloGrilla {
+                position: absolute;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                color: $colorVioleta;
+                font-weight: 700;
+                font-size: 1.5em;                
+                z-index: -1;                
+            }
+            .img-galeria {
+                max-width: 100%;
+                height: auto;
+            }
+            .img-galeria:hover {
+                opacity: 0.20;                
+            }
+
+        } 
+    }
+    .main-galeria {
+        display: flex;
+        justify-content: center;  
+        max-width: 600px;  
+        margin: 0 auto;
+        padding: 150px 0 100px 0;
+        .cuerpo {
+            width: 100%;
+            padding: 10px 15px 0 0;            
+            .ilus-galeria {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+        .datos-galeria {
+            width: 100%;
+            padding: 0 0 100px 15px;              
+            p {
+                width: 100%;
+                font-size: 1.5rem;
+                word-spacing: normal;
+                line-height: 2.8rem;
+                letter-spacing: normal;
+            }
+            .titu-trabajos {
+                font-size: 3.5rem;
+            }
+            .titu-comics {
+                font-size: 3.5rem;
+            }
+            .boton {                
+                margin-top: 20px;
+            }
+        }
+    }
+    .subir {
+        position: relative;
+        left: 650px;
+        bottom: 50px;
+            .btn {
+                background-color: $colorVerde;
+                color: $colorBlanco;
+                width: 40px;
+                height: 30px;
+                border: none;
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+            .botonComics {
+                background-color: $colorCeleste;
+            } 
+    }
+    .footer {
+        height: 150px;
+        .datosFooter {
+            max-width: 600px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px auto;
+            padding: 30px 0px 15px;
+            .datosYaniFooter {                
+                .titFooter {
+                    margin: 0px;
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                .mailFooter {
+                    font-size: 1.3em;
+                    margin-bottom: 5px;
+                    a {
+                        padding-left: 10px;
+                    }
+                }
+                .mailto {
+                    color: $colorBlanco;
+                    font-size: 1.3em;
+                }
+                .iconosFooter {
+                    display: flex;
+                    justify-content: center;
+                    width: 80px;
+                    padding-top: 20px;
+                    a {
+                        color: $colorBlanco;
+                        padding-right: 15px;
+                        .logoIg {
+                            width: 25px;    
+                        }
+                    }
+                }            
+            }
+            .datosPancitoFooter {                
+                .yaniCopy {
+                    margin-bottom: 10px;
+                    line-height: 2em;
+                }
+                .salto-linea{
+                    display: block;
+                }
+                .linkPancito {
+                    padding-top: 35px;
+                }
+            }
+        }
+    }
+}
+
 //movil
 @media screen and (max-width:767px) { 
     .mainHeader  {

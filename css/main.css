@@ -75,71 +75,85 @@ a:link, a:visited, a:active {
 @media screen and (min-width: 1024px) {
   .container {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    margin: 300px 100px 20px;
-  }
-  .container .encabezado {
-    font-size: 2.5em;
-    padding-top: 5px;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 250px 0 150px 0;
   }
   .container .formulario {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
     height: 100%;
-    padding: 0px 40px;
+    padding-left: 20px;
   }
-  .container .nombreCasillero {
+  .container .formulario .encabezado {
+    font-size: 3.5em;
+  }
+  .container .formulario .nombreCasillero {
     font-size: 1.2em;
-    margin: 10px 0px 0px 0px;
+    margin: 15px 0px 5px 0px;
   }
-  .container .casilleros {
-    width: 250px;
+  .container .formulario .casilleros {
     border: 2px solid #ced17f;
   }
-  .container .casilleros:hover {
-    border: 2px solid #eae9e7;
+  .container .formulario .casilleros:hover {
+    border: 2px solid;
   }
-  .container .msj {
-    height: 115px;
+  .container .formulario .msj {
+    height: 90px;
   }
-  .container .ilus-ctc {
+  .container .formulario .btn {
+    height: 30px;
+    margin-top: 15px;
+    font-size: 1.4em;
+  }
+  .container .ilus-ctc img {
     width: 100%;
-    padding: 0px 20px 0px 0px;
-    margin: 10px 0px 20px 0px;
+    padding: 5px 20px 0 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     display: flex;
+    justify-content: center;
     flex-direction: row-reverse;
-    margin: 140px 70px 130px 70px;
-    padding: 0px 70px;
-  }
-  .container .encabezado {
-    font-size: 2.5em;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
   }
   .container .formulario {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 0px 20px;
+    padding-left: 15px;
   }
-  .container .nombreCasillero {
+  .container .formulario .encabezado {
+    font-size: 2.5em;
+  }
+  .container .formulario .nombreCasillero {
     font-size: 1.2em;
-    margin: 10px 0px 0px 0px;
+    margin: 15px 0px 5px 0px;
   }
-  .container .casilleros {
-    width: 100%;
+  .container .formulario .casilleros {
     border: 2px solid #ced17f;
   }
-  .container .casilleros:hover {
+  .container .formulario .casilleros:hover {
     border: 2px solid;
   }
-  .container .msj {
+  .container .formulario .msj {
     height: 100px;
   }
-  .container .ilus-ctc {
+  .container .formulario .btn {
+    height: 30px;
+    margin-top: 15px;
+    font-size: 1.4em;
+  }
+  .container .ilus-ctc img {
     width: 100%;
-    margin: 10px 0px 20px 0px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -218,55 +232,49 @@ a:link, a:visited, a:active {
   .main-bio {
     display: flex;
     justify-content: center;
-    margin: 290px 230px 0px 230px;
-    padding: 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 250px 0 150px;
   }
-  .main-bio .imagenBio {
-    width: 100%;
-    margin: 0px;
+  .main-bio .imagen-bio {
+    padding: 5px 20px 0 0;
   }
-  .main-bio .imagenBio .ilus-galeria {
+  .main-bio .imagen-bio img {
     width: 100%;
-    padding-bottom: 20px;
   }
   .main-bio .textoBio {
-    position: sticky;
-    top: 1000px;
-    padding: 0px 20px;
+    width: 600px;
+    padding: 0 0 30px 20px;
+  }
+  .main-bio .textoBio .titu-bio {
+    font-size: 3.5em;
   }
   .main-bio .textoBio p {
-    padding: 0px 80px 0px 0px;
-    width: 100%;
-    font-size: 1.5rem;
-    word-spacing: normal;
-    line-height: 2.8rem;
-    letter-spacing: normal;
+    font-size: 1.6em;
+    line-height: 1.7em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) { /*tablet*/
   .main-bio {
     display: flex;
     justify-content: center;
-    margin: 150px 70px 120px 70px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 150px 0 100px;
   }
-  .main-bio .cuerpo-bio {
+  .main-bio .imagen-bio {
+    padding-right: 15px;
+  }
+  .main-bio .imagen-bio img {
     width: 100%;
-    padding: 0px 15px 0px 15px;
   }
-  .main-bio .ilus-galeria {
-    width: 100%;
-    padding: 5px;
-  }
-  .main-bio .datos-bio {
+  .main-bio .textoBio {
     width: 600px;
-    padding: 10px 0px 0px 15px;
+    padding: 0 0 30px 15px;
   }
-  .main-bio .datos-bio p {
-    width: 100%;
-    font-size: 1rem;
-    word-spacing: normal;
-    line-height: 1.8rem;
-    letter-spacing: normal;
+  .main-bio .textoBio p {
+    font-size: 1.4em;
+    line-height: 1.7em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -289,218 +297,51 @@ a:link, a:visited, a:active {
   }
 }
 @media screen and (min-width: 1024px) {
-  /*.navbar {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 20px;
-      font-size: 0.5rem;
-      position: fixed;
-      z-index: 100;
-      .navbar-brand {
-          width: 90px;
-          margin-left: -10px;            
-      }
-      .navbar-toggler {
-          background-color: $colorVioleta;
-          margin-top: 10px;
-      }
-      .navbar-nav {
-          font-size: 1rem;
-          .nav-link {
-              color: $colorVioleta;
-              padding: 5px 40px;
-          }
-      }
-      .navbar-link {
-          padding: 0px;
-      }
-  }*/
   .mainHeader {
-    padding: 0 100px;
+    height: 180px;
+    padding: 0 80px;
   }
-  .mainHeader .logo {
-    font-size: 1.7em;
-  }
-  .mainHeader ul li {
-    font-size: 1.3em;
+  .mainHeader .logo img {
+    width: 150px;
   }
   .hamburger {
     display: none;
   }
-  .mainHeader .navbar-desktop {
-    max-width: 1100px;
+  .main {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 250px 0 150px 0;
   }
   .main .titular h1 {
-    margin: 20vh 0px 0vh;
-    padding-bottom: 1vh;
-    font-size: 3rem;
-    line-height: 1.4em;
+    width: 100%;
+    font-size: 5.8em;
+    margin-bottom: 40px;
   }
-  .ilustracion {
-    padding: 5vh 10vw 0px;
+  .main .ilustracion {
+    max-width: 1000px;
+    margin: 0px auto;
   }
-  .titular-2 h2 {
-    padding: 5vh 0px 1vh;
-    margin: 0px;
-    font-size: 3rem;
-    line-height: 1.4em;
+  .main .ilustracion img {
+    width: 100%;
+  }
+  .main .titular-2 h2 {
+    width: 100%;
+    padding: 40px 0 70px;
+    font-size: 6em;
   }
   .galeria {
-    margin: 110px 20px 0px;
-  }
-  .galeria .ilus-secciones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-  }
-  .galeria .ilus-secciones .tituloGrilla {
-    position: absolute;
-    text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    color: #503748;
-    font-weight: 700;
-    font-size: 1.3em;
-    z-index: -1;
-  }
-  .galeria .ilus-secciones .img-fluid:hover {
-    opacity: 0.2;
-  }
-  .main-galeria {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 20px;
-    padding: 90px 0px 5px;
-  }
-  .main-galeria .ilus-galeria {
-    width: 100%;
-    padding: 8px 35px;
-  }
-  .main-galeria .datos-galeria {
-    margin: 0px;
-    padding: 8px 35px;
-  }
-  .main-galeria .datos-galeria p {
-    width: 100%;
-    font-size: 1rem;
-    word-spacing: normal;
-    line-height: 1.8rem;
-    letter-spacing: normal;
-  }
-  .main-galeria .datos-galeria .titu-trabajos {
-    font-size: 2.7rem;
-  }
-  .main-galeria .datos-galeria .titu-comics {
-    font-size: 2.7rem;
-  }
-  .footer {
-    font-family: "Roboto", sans-serif;
-    margin: 120px 0px 0px 0px;
-    padding-top: 25px;
-  }
-  .footer .datosYaniFooter {
-    padding-left: 5vh;
-  }
-  .footer .datosYaniFooter .titFooter {
-    margin: 0px;
-    font-size: 1.3em;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .footer .datosYaniFooter .mailFooter {
-    margin-bottom: 5px;
-  }
-  .footer .datosYaniFooter .mailto {
-    color: #eae9e7;
-    font-size: 1.3em;
-  }
-  .footer .datosYaniFooter .iconosFooter {
-    display: flex;
-  }
-  .footer .datosYaniFooter .iconosFooter a {
-    color: #eae9e7;
-    padding-right: 10px;
-  }
-  .footer .datosYaniFooter .iconosFooter a .logoIg {
-    width: 20px;
-  }
-  .footer .datosPancitoFooter {
-    margin-top: 30px;
-    padding-left: 5vh;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .background {
-    font-size: 1rem;
-    /*
-    .navbar {
-        padding-top: 20px;
-        padding: 0px 40px;
-        position: fixed;
-        z-index: 100;
-    }
-    .navbar-brand {
-        width: 200px;
-        margin-left: 20px;            
-    }
-    .navbar-toggler {
-        background-color: $colorVioleta;
-    }
-    .navbar-nav {
-        font-size: 1em;
-        padding: 0px 10px;
-        .nav-item {
-            padding: 0px 10px;
-            .nav-link {
-                width: 100%;
-                color: $colorVioleta;
-                padding: 5px 10px;
-                letter-spacing: 0.1em;
-                &:hover {
-                    background-color: $colorVioleta;
-                    color: $colorBlanco;
-                }
-            }
-        }
-    }*/
-  }
-  .background .mainHeader {
-    padding: 0 50px;
-  }
-  .background .mainHeader .logo {
-    font-size: 1.6em;
-  }
-  .background .mainHeader ul li {
-    font-size: 1em;
-  }
-  .background .hamburger {
-    display: none;
-  }
-  .background .main {
-    margin-top: 130px;
-    padding: 10px 80px 0px;
-  }
-  .background .titular h1 {
-    font-size: 5rem;
-    padding: 10px 0px 20px;
-  }
-  .background .titular-2 h2 {
-    padding: 10px 0px 10px;
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: #516f6b;
-    font-weight: 900;
-    text-align: center;
-  }
-  .galeria {
-    margin: 140px 70px 130px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 250px 0 150px;
   }
   .galeria .ilus-secciones {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
-    padding: 15px 10px;
+    padding: 0 10px 20px 10px;
   }
   .galeria .ilus-secciones .tituloGrilla {
     position: absolute;
@@ -508,77 +349,289 @@ a:link, a:visited, a:active {
     font-family: "Roboto", sans-serif;
     color: #503748;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.5em;
     z-index: -1;
   }
-  .galeria .ilus-secciones .img-fluid:hover {
+  .galeria .ilus-secciones .img-galeria {
+    max-width: 100%;
+    height: auto;
+  }
+  .galeria .ilus-secciones .img-galeria:hover {
     opacity: 0.2;
   }
   .main-galeria {
     display: flex;
     justify-content: center;
-    margin: 150px 70px 0px 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 250px 0 150px 0;
   }
   .main-galeria .cuerpo {
     width: 100%;
-    padding: 0px 15px 0px 15px;
+    padding: 10px 20px 0 0;
   }
-  .main-galeria .ilus-galeria {
+  .main-galeria .cuerpo .ilus-galeria {
     width: 100%;
-    padding: 5px;
+    padding-bottom: 20px;
   }
   .main-galeria .datos-galeria {
-    width: 600px;
-    padding: 0px 0px 0px 15px;
+    width: 100%;
+    padding: 0 0 100px 20px;
   }
   .main-galeria .datos-galeria p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     word-spacing: normal;
-    line-height: 1.8rem;
+    line-height: 2.8rem;
     letter-spacing: normal;
   }
   .main-galeria .datos-galeria .titu-trabajos {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
   }
   .main-galeria .datos-galeria .titu-comics {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
+  }
+  .main-galeria .datos-galeria .boton {
+    margin-top: 20px;
+  }
+  .subir {
+    position: relative;
+    left: 780px;
+    bottom: 50px;
+  }
+  .subir .btn {
+    background-color: #516f6b;
+    color: #eae9e7;
+    width: 40px;
+    height: 30px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .subir .botonComics {
+    background-color: #7ebdb3;
   }
   .footer {
+    height: 150px;
+  }
+  .footer .datosFooter {
+    max-width: 1000px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
-    margin: 120px 0px 0px 0px;
-    padding: 25px 0px 15px;
+    margin: 0px auto;
+    padding: 30px 0px 15px;
   }
-  .footer .datosYaniFooter {
-    padding-left: 10vh;
-  }
-  .footer .datosYaniFooter .titFooter {
+  .footer .datosFooter .datosYaniFooter .titFooter {
     margin: 0px;
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .footer .datosYaniFooter .mailFooter {
     margin-bottom: 5px;
   }
-  .footer .datosYaniFooter .mailto {
+  .footer .datosFooter .datosYaniFooter .mailFooter {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+  .footer .datosFooter .datosYaniFooter .mailFooter a {
+    padding-left: 10px;
+  }
+  .footer .datosFooter .datosYaniFooter .mailto {
     color: #eae9e7;
     font-size: 1.3em;
   }
-  .footer .datosYaniFooter .iconosFooter {
+  .footer .datosFooter .datosYaniFooter .iconosFooter {
     display: flex;
+    justify-content: center;
+    width: 80px;
+    padding-top: 25px;
   }
-  .footer .datosYaniFooter .iconosFooter a {
+  .footer .datosFooter .datosYaniFooter .iconosFooter a {
     color: #eae9e7;
-    padding-right: 10px;
+    padding-right: 15px;
   }
-  .footer .datosYaniFooter .iconosFooter a .logoIg {
-    width: 20px;
+  .footer .datosFooter .datosYaniFooter .iconosFooter a .logoIg {
+    width: 25px;
   }
-  .footer .datosPancitoFooter {
-    padding-right: 10vh;
+  .footer .datosFooter .datosPancitoFooter .yaniCopy {
+    margin-bottom: 10px;
+    line-height: 2em;
+  }
+  .footer .datosFooter .datosPancitoFooter .salto-linea {
+    display: block;
+  }
+  .footer .datosFooter .datosPancitoFooter .linkPancito {
+    padding-top: 35px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainHeader {
+    padding: 0 50px;
+  }
+  .mainHeader .logo img {
+    width: 100px;
+  }
+  .mainHeader .navbar-desktop {
+    display: none;
+  }
+  .main {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main .titular {
+    padding-top: 150px;
+  }
+  .main .titular h1 {
+    width: 100%;
+    font-size: 5.5em;
+    margin-bottom: 40px;
+  }
+  .main .ilustracion {
+    max-width: 600px;
+    margin: 0px auto;
+  }
+  .main .ilustracion img {
+    width: 100%;
+  }
+  .main .titular-2 h2 {
+    width: 100%;
+    padding: 40px 0 70px;
+    font-size: 5.5em;
+    margin-bottom: 30px;
+  }
+  .galeria {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 150px 0 100px;
+  }
+  .galeria .ilus-secciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 0 10px 20px 10px;
+  }
+  .galeria .ilus-secciones .tituloGrilla {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: #503748;
+    font-weight: 700;
+    font-size: 1.5em;
+    z-index: -1;
+  }
+  .galeria .ilus-secciones .img-galeria {
+    max-width: 100%;
+    height: auto;
+  }
+  .galeria .ilus-secciones .img-galeria:hover {
+    opacity: 0.2;
+  }
+  .main-galeria {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
+  }
+  .main-galeria .cuerpo {
+    width: 100%;
+    padding: 10px 15px 0 0;
+  }
+  .main-galeria .cuerpo .ilus-galeria {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .main-galeria .datos-galeria {
+    width: 100%;
+    padding: 0 0 100px 15px;
+  }
+  .main-galeria .datos-galeria p {
+    width: 100%;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    line-height: 2.8rem;
+    letter-spacing: normal;
+  }
+  .main-galeria .datos-galeria .titu-trabajos {
+    font-size: 3.5rem;
+  }
+  .main-galeria .datos-galeria .titu-comics {
+    font-size: 3.5rem;
+  }
+  .main-galeria .datos-galeria .boton {
+    margin-top: 20px;
+  }
+  .subir {
+    position: relative;
+    left: 650px;
+    bottom: 50px;
+  }
+  .subir .btn {
+    background-color: #516f6b;
+    color: #eae9e7;
+    width: 40px;
+    height: 30px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .subir .botonComics {
+    background-color: #7ebdb3;
+  }
+  .footer {
+    height: 150px;
+  }
+  .footer .datosFooter {
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    margin: 0px auto;
+    padding: 30px 0px 15px;
+  }
+  .footer .datosFooter .datosYaniFooter .titFooter {
+    margin: 0px;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .footer .datosFooter .datosYaniFooter .mailFooter {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+  .footer .datosFooter .datosYaniFooter .mailFooter a {
+    padding-left: 10px;
+  }
+  .footer .datosFooter .datosYaniFooter .mailto {
+    color: #eae9e7;
+    font-size: 1.3em;
+  }
+  .footer .datosFooter .datosYaniFooter .iconosFooter {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    padding-top: 20px;
+  }
+  .footer .datosFooter .datosYaniFooter .iconosFooter a {
+    color: #eae9e7;
+    padding-right: 15px;
+  }
+  .footer .datosFooter .datosYaniFooter .iconosFooter a .logoIg {
+    width: 25px;
+  }
+  .footer .datosFooter .datosPancitoFooter .yaniCopy {
+    margin-bottom: 10px;
+    line-height: 2em;
+  }
+  .footer .datosFooter .datosPancitoFooter .salto-linea {
+    display: block;
+  }
+  .footer .datosFooter .datosPancitoFooter .linkPancito {
+    padding-top: 35px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -810,35 +863,26 @@ body .mainHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 120px;
 }
 body .mainHeader ul {
   display: flex;
 }
 body .mainHeader ul li {
+  font-size: 1.3em;
+  font-weight: 600;
   letter-spacing: 0.1em;
+  padding: 5px;
   position: relative;
   margin-left: 40px;
 }
 body .mainHeader ul li a {
+  padding: 5px;
   color: #503748;
 }
-body .mainHeader ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #fff;
-  transform: scaleX(0);
-  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  transform-origin: right center;
-}
-body .mainHeader ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left center;
-  transition-duration: 0.4s;
+body .mainHeader ul li a:hover {
+  background: #503748;
+  color: #eae9e7;
 }
 body .hamburger {
   position: fixed;
@@ -931,7 +975,7 @@ body .footer a {
   color: #516f6b;
   font-weight: 700;
 }
-.datos-galeria button {
+.datos-galeria .boton {
   background-color: #516f6b;
   color: #eae9e7;
   width: 40px;
@@ -942,6 +986,12 @@ body .footer a {
 }
 .datos-galeria .botonComics {
   background-color: #7ebdb3;
+  color: #eae9e7;
+  width: 40px;
+  height: 30px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .subir {

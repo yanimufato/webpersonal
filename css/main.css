@@ -453,6 +453,9 @@ a:link, a:visited, a:active {
   .footer .datosFooter .datosYaniFooter .iconosFooter a .logoIg {
     width: 25px;
   }
+  .footer .datosFooter .datosPancitoFooter {
+    text-align: right;
+  }
   .footer .datosFooter .datosPancitoFooter .yaniCopy {
     margin-bottom: 10px;
     line-height: 2em;
@@ -697,7 +700,7 @@ a:link, a:visited, a:active {
     height: auto;
   }
   .galeria .ilus-secciones .img-galeria:hover {
-    opacity: 0.2;
+    opacity: 0.25;
   }
   .main-galeria {
     display: flex;

@@ -162,7 +162,8 @@
                     }
                 }            
             }
-            .datosPancitoFooter {                
+            .datosPancitoFooter {   
+                text-align: right;             
                 .yaniCopy {
                     margin-bottom: 10px;
                     line-height: 2em;
@@ -341,7 +342,8 @@
                     }
                 }            
             }
-            .datosPancitoFooter {                
+            .datosPancitoFooter {  
+                              
                 .yaniCopy {
                     margin-bottom: 10px;
                     line-height: 2em;
@@ -421,7 +423,7 @@
                 height: auto;
             }
             .img-galeria:hover {
-                opacity: 0.20;                
+                opacity: 0.25;                
             }
 
         } 
